@@ -123,6 +123,14 @@ test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
     assert.equal(resNiqab.status, 200);
     const resAbaya = await fetch(`${baseUrl}/images/abaya-embroidery.jpg`);
     assert.equal(resAbaya.status, 200);
+    const resReelGreen = await fetch(`${baseUrl}/images/insta-reel-green.jpg`);
+    assert.equal(resReelGreen.status, 200);
+    const resReelPlum = await fetch(`${baseUrl}/images/insta-reel-plum.jpg`);
+    assert.equal(resReelPlum.status, 200);
+    const resReelBlue = await fetch(`${baseUrl}/images/insta-reel-blue.jpg`);
+    assert.equal(resReelBlue.status, 200);
+    const resReelOlive = await fetch(`${baseUrl}/images/insta-reel-olive.jpg`);
+    assert.equal(resReelOlive.status, 200);
   });
 
   await t.test('All 6 individual product images in /assets are accessible', async () => {
