@@ -111,8 +111,14 @@ test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
   });
 
   await t.test('All images in public/images are accessible locally', async () => {
-    const resHero = await fetch(`${baseUrl}/images/hero-niqab.jpg`);
-    assert.equal(resHero.status, 200);
+    const resHeroBanner = await fetch(`${baseUrl}/images/hero-banner.jpg`);
+    assert.equal(resHeroBanner.status, 200);
+    const resHeroRtl = await fetch(`${baseUrl}/images/hero-banner-rtl.jpg`);
+    assert.equal(resHeroRtl.status, 200);
+    const resAbout = await fetch(`${baseUrl}/images/about-model.jpg`);
+    assert.equal(resAbout.status, 200);
+    const resLogo = await fetch(`${baseUrl}/images/brand-logo.png`);
+    assert.equal(resLogo.status, 200);
     const resNiqab = await fetch(`${baseUrl}/images/niqab-saudi.jpg`);
     assert.equal(resNiqab.status, 200);
     const resAbaya = await fetch(`${baseUrl}/images/abaya-embroidery.jpg`);
