@@ -281,49 +281,52 @@ async function loadStoreConfig() {
 // Apply Social and Contact Config without creating fake links
 function applyConfigToDOM() {
   const dict = t();
+  const defaultInstagram = 'https://www.instagram.com/hijabstoreislamic/?hl=ar';
+  const defaultTikTok = 'https://www.tiktok.com/@hijabstore_islamic';
 
-  // WhatsApp links
-  const whatsappElements = document.querySelectorAll('.dynamic-whatsapp-link');
-  whatsappElements.forEach(el => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (state.config.whatsappNumber && state.config.whatsappNumber.trim() !== '') {
-        const text = state.lang === 'ar'
-          ? 'السلام عليكم! أود الاستفسار عن منتجات متجر Hijab Store Islamic.'
-          : (state.lang === 'fr'
-            ? 'Bonjour ! Je souhaite obtenir des informations sur les produits de Hijab Store Islamic.'
-            : 'Olá! Gostaria de tirar dúvidas sobre os produtos da Hijab Store Islamic.');
-        window.open(`https://wa.me/${state.config.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
-      } else {
-        showToast(dict.socialNotice);
-      }
-    });
-  });
+  const instagramUrl = (state.config.instagramUrl && state.config.instagramUrl.trim() !== '')
+    ? state.config.instagramUrl
+    : defaultInstagram;
+
+  const tiktokUrl = (state.config.tiktokUrl && state.config.tiktokUrl.trim() !== '')
+    ? state.config.tiktokUrl
+    : defaultTikTok;
 
   // Instagram links
   const igElements = document.querySelectorAll('.dynamic-instagram-link');
   igElements.forEach(el => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (state.config.instagramUrl && state.config.instagramUrl.trim() !== '') {
-        window.open(state.config.instagramUrl, '_blank', 'noopener,noreferrer');
-      } else {
-        showToast(dict.socialNotice);
-      }
-    });
+    el.href = instagramUrl;
+    el.target = '_blank';
+    el.rel = 'noopener noreferrer';
   });
 
   // TikTok links
   const ttElements = document.querySelectorAll('.dynamic-tiktok-link');
   ttElements.forEach(el => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (state.config.tiktokUrl && state.config.tiktokUrl.trim() !== '') {
-        window.open(state.config.tiktokUrl, '_blank', 'noopener,noreferrer');
-      } else {
+    el.href = tiktokUrl;
+    el.target = '_blank';
+    el.rel = 'noopener noreferrer';
+  });
+
+  // WhatsApp links
+  const whatsappElements = document.querySelectorAll('.dynamic-whatsapp-link');
+  whatsappElements.forEach(el => {
+    if (state.config.whatsappNumber && state.config.whatsappNumber.trim() !== '') {
+      const text = state.lang === 'ar'
+        ? 'السلام عليكم! أود الاستفسار عن منتجات متجر Hijab Store Islamic.'
+        : (state.lang === 'fr'
+          ? 'Bonjour ! Je souhaite obtenir des informations sur les produits de Hijab Store Islamic.'
+          : 'Olá! Gostaria de tirar dúvidas sobre os produtos da Hijab Store Islamic.');
+      el.href = `https://wa.me/${state.config.whatsappNumber}?text=${encodeURIComponent(text)}`;
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+    } else {
+      el.href = '#';
+      el.onclick = (e) => {
+        e.preventDefault();
         showToast(dict.socialNotice);
-      }
-    });
+      };
+    }
   });
 }
 
@@ -613,11 +616,11 @@ function buyViaWhatsAppModal() {
 
   let message = '';
   if (state.lang === 'ar') {
-    message = `السلام عليكم! أود شراء المنتج التالي:\n- *${localizedName}* (الكمية: ${state.activeQuantity})${colorText}\n- القيمة: ${formatBRL(p.price * state.activeQuantity)}\n\nيرجى إفادتي بخيارات الشحن وطريقة الدفع. شكراً لكم! ✨`;
+    message = `السلام عليكم! أود شراء المنتج التالي:\n- *${localizedName}* (الكمية: ${state.activeQuantity})${colorText}\n- القيمة: ${formatBRL(p.price * state.activeQuantity)}\n\nيرجى إفادتي بخيارات الشحن وطريقة الدفع. شكراً لكم!`;
   } else if (state.lang === 'fr') {
-    message = `Bonjour ! Je souhaite commander :\n- *${localizedName}* (Quantité: ${state.activeQuantity})${colorText}\n- Total: ${formatBRL(p.price * state.activeQuantity)}\n\nMerci de m'indiquer les modalités d'expédition et de paiement. ✨`;
+    message = `Bonjour ! Je souhaite commander :\n- *${localizedName}* (Quantité: ${state.activeQuantity})${colorText}\n- Total: ${formatBRL(p.price * state.activeQuantity)}\n\nMerci de m'indiquer les modalités d'expédition et de paiement.`;
   } else {
-    message = `Olá! Tenho interesse em comprar:\n- *${localizedName}* (Quantidade: ${state.activeQuantity})${colorText}\n- Valor: ${formatBRL(p.price * state.activeQuantity)}\n\nPoderia me informar as opções de frete e pagamento? ✨`;
+    message = `Olá! Tenho interesse em comprar:\n- *${localizedName}* (Quantidade: ${state.activeQuantity})${colorText}\n- Valor: ${formatBRL(p.price * state.activeQuantity)}\n\nPoderia me informar as opções de frete e pagamento?`;
   }
   
   const url = `https://wa.me/${state.config.whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -868,7 +871,7 @@ function checkoutWhatsApp() {
     if (discount > 0) msg += `*الخصم:* -${formatBRL(discount)}\n`;
     msg += `*الشحن:* ${shipping === 0 ? 'مجاني' : formatBRL(shipping)}\n`;
     msg += `*الإجمالي النهائي:* ${formatBRL(total)}\n`;
-    msg += `--------------------------------\n\nيرجى تأكيد تفاصيل الدفع والعنوان. بارك الله فيكم! ✨`;
+    msg += `--------------------------------\n\nيرجى تأكيد تفاصيل الدفع والعنوان. بارك الله فيكم!`;
   } else if (state.lang === 'fr') {
     msg = `🛍️ *NOUVELLE COMMANDE - HIJAB STORE ISLAMIC*\n\nBonjour ! Je souhaite finaliser la commande des articles suivants :\n\n`;
     state.cart.forEach((item, index) => {
@@ -882,7 +885,7 @@ function checkoutWhatsApp() {
     if (discount > 0) msg += `*Remise:* -${formatBRL(discount)}\n`;
     msg += `*Livraison:* ${shipping === 0 ? 'GRATUITE' : formatBRL(shipping)}\n`;
     msg += `*TOTAL:* ${formatBRL(total)}\n`;
-    msg += `--------------------------------\n\nMerci de me communiquer les modalités de règlement. ✨`;
+    msg += `--------------------------------\n\nMerci de me communiquer les modalités de règlement.`;
   } else {
     msg = `🛍️ *NOVO PEDIDO - HIJAB STORE ISLAMIC*\n\nOlá! Gostaria de concluir a compra dos seguintes itens:\n\n`;
     state.cart.forEach((item, index) => {
@@ -896,7 +899,7 @@ function checkoutWhatsApp() {
     if (discount > 0) msg += `*Desconto:* -${formatBRL(discount)}\n`;
     msg += `*Frete:* ${shipping === 0 ? 'GRÁTIS' : formatBRL(shipping)}\n`;
     msg += `*TOTAL DO PEDIDO:* ${formatBRL(total)}\n`;
-    msg += `--------------------------------\n\nPor favor, me confirme as opções para pagamento. Obrigada! ✨`;
+    msg += `--------------------------------\n\nPor favor, me confirme as opções para pagamento. Obrigada!`;
   }
 
   const url = `https://wa.me/${state.config.whatsappNumber}?text=${encodeURIComponent(msg)}`;

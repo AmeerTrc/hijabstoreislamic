@@ -10,7 +10,7 @@ const translations = {
   pt: {
     dir: 'ltr',
     langName: 'Português',
-    announcement: '✨ <strong>Frete Grátis</strong> para todo o Brasil em compras acima de R$ 199,00 • Parcele em até 6x • Qualidade Premium',
+    announcement: '<strong>Frete Grátis</strong> para todo o Brasil em compras acima de R$ 199,00 • Parcele em até 6x • Qualidade Premium',
     nav: {
       home: 'Início',
       catalog: 'Catálogo',
@@ -109,7 +109,7 @@ const translations = {
       tiktokSubtitle: 'TikTok Vídeos',
       tiktokTitle: 'Tutoriais & Estilo Rápido',
       tiktokBtn: 'Ver no TikTok',
-      tiktok1: '<strong>Tutorial:</strong> 3 formas elegantes de usar seu hijab chiffon sem furar com alfinetes ✨',
+      tiktok1: '<strong>Tutorial:</strong> 3 formas elegantes de usar seu hijab chiffon sem furar com alfinetes',
       tiktok2: '<strong>Inspiração:</strong> Como combinar nossa Abaya Dubai aberta para festas e recepções 💎',
       tiktok3: '<strong>Dica de Ouro:</strong> Testamos o poder dos pins magnéticos no vento forte do dia a dia 🧲'
     },
@@ -147,7 +147,7 @@ const translations = {
       subtotal: 'Subtotal:',
       discount: 'Desconto do Cupom:',
       shipping: 'Frete:',
-      freeShipping: 'Grátis ✨',
+      freeShipping: 'Grátis',
       total: 'Total:',
       applyCoupon: 'Aplicar',
       couponPlaceholder: 'Cupom (ex: BEMVINDA10)',
@@ -161,7 +161,7 @@ const translations = {
   ar: {
     dir: 'rtl',
     langName: 'العربية',
-    announcement: '✨ <strong>شحن مجاني</strong> لكافة الطلبات فوق R$ 199,00 • تقسيط حتى 6 دفعات • جودة شرعية فاخرة',
+    announcement: '<strong>شحن مجاني</strong> لكافة الطلبات فوق R$ 199,00 • تقسيط حتى 6 دفعات • جودة شرعية فاخرة',
     nav: {
       home: 'الرئيسية',
       catalog: 'الكتالوج',
@@ -260,7 +260,7 @@ const translations = {
       tiktokSubtitle: 'فيديوهات TikTok',
       tiktokTitle: 'طرق لف الحجاب وتنسيق العبايات',
       tiktokBtn: 'مشاهدة على TikTok',
-      tiktok1: '<strong>طريقة سريعة:</strong> 3 طرق لتثبيت الشيفون بأناقة دون إتلاف القماش ✨',
+      tiktok1: '<strong>طريقة سريعة:</strong> 3 طرق لتثبيت الشيفون بأناقة دون إتلاف القماش',
       tiktok2: '<strong>تنسيق محتشم:</strong> كيفية تنسيق العباءة السوداء مع النقاب للمناسبات 💎',
       tiktok3: '<strong>نصيحة ذهبية:</strong> تجربة قوة الدبابيس المغناطيسية الأصلية 🧲'
     },
@@ -298,7 +298,7 @@ const translations = {
       subtotal: 'المجموع الفرعي:',
       discount: 'خصم الكوبون:',
       shipping: 'الشحن:',
-      freeShipping: 'مجاني ✨',
+      freeShipping: 'مجاني',
       total: 'الإجمالي:',
       applyCoupon: 'تطبيق',
       couponPlaceholder: 'كوبون الخصم (مثل BEMVINDA10)',
@@ -312,7 +312,7 @@ const translations = {
   fr: {
     dir: 'ltr',
     langName: 'Français',
-    announcement: '✨ <strong>Livraison Gratuite</strong> pour toutes les commandes supérieures à R$ 199,00 • Paiement jusqu\'à 6x • Qualité Premium',
+    announcement: '<strong>Livraison Gratuite</strong> pour toutes les commandes supérieures à R$ 199,00 • Paiement jusqu\'à 6x • Qualité Premium',
     nav: {
       home: 'Accueil',
       catalog: 'Catalogue',
@@ -411,7 +411,7 @@ const translations = {
       tiktokSubtitle: 'Vidéos TikTok',
       tiktokTitle: 'Tutoriels & Astuces Hijab',
       tiktokBtn: 'Voir sur TikTok',
-      tiktok1: '<strong>Tutoriel :</strong> 3 façons de draper votre hijab mousseline sans l\'abîmer ✨',
+      tiktok1: '<strong>Tutoriel :</strong> 3 façons de draper votre hijab mousseline sans l\'abîmer',
       tiktok2: '<strong>Inspiration :</strong> Comment assortir une Abaya Dubaï avec grâce 💎',
       tiktok3: '<strong>Astuce :</strong> Test de force de nos épingles magnétiques en néodyme 🧲'
     },
@@ -449,7 +449,7 @@ const translations = {
       subtotal: 'Sous-total :',
       discount: 'Remise du Code :',
       shipping: 'Livraison :',
-      freeShipping: 'Gratuite ✨',
+      freeShipping: 'Gratuite',
       total: 'Total :',
       applyCoupon: 'Appliquer',
       couponPlaceholder: 'Code promo (ex: BEMVINDA10)',
