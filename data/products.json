@@ -1,5 +1,199 @@
 [
   {
+    "id": "abaya-dubai-luxo",
+    "name": "Abaya Estilo Dubai com Bordados Dourados",
+    "name_ar": "عباية دبي الفاخرة بتطريزات ذهبية ناعمة",
+    "name_fr": "Abaya Style Dubaï avec Broderies Dorées",
+    "category": "abayas",
+    "categoryName": "Abayas",
+    "categoryName_ar": "العبايات",
+    "categoryName_fr": "Abayas",
+    "price": 349.90,
+    "originalPrice": 420.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 142,
+    "description": "Abaya ampla com corte solto e elegante, com bordados florais dourados delicados nas mangas e na barra. Tecido nobre, fresco e 100% opaco, acompanhada de niqab combinando.",
+    "description_ar": "عباية إسلامية فضفاضة بتطريز نباتي ذهبي فاخر على الأكمام وأسفل الثوب، سابغة وساترة بالكامل مع سواد حالك وأناقة راقية مع نقاب متناسق.",
+    "description_fr": "Abaya ample à la coupe fluide et pudique, ornée de délicates broderies florales dorées sur les manches et le bas. Tissu noble et totalement opaque.",
+    "fabric": "Nida Premium Original dos Emirados",
+    "fabric_ar": "قماش كريب ندى إماراتي أصلي",
+    "fabric_fr": "Nida Premium Original des Émirats",
+    "dimensions": "Tamanhos: P (135cm), M (140cm), G (145cm), GG (150cm)",
+    "dimensions_ar": "المقاسات: S (135سم)، M (140سم)، L (145سم)، XL (150سم)",
+    "dimensions_fr": "Tailles: S (135cm), M (140cm), L (145cm), XL (150cm)",
+    "colors": [
+      { "name": "Preto com Dourado", "name_ar": "أسود مع تطريز ذهبي", "name_fr": "Noir & Or", "hex": "#171717" }
+    ],
+    "image": "/assets/abaya-black-gold-embroidery.jpg",
+    "gallery": [
+      "/assets/abaya-black-gold-embroidery.jpg",
+      "/assets/abaya-black-layered-luxury.jpg"
+    ]
+  },
+  {
+    "id": "abaya-rose-mauve-bordada",
+    "name": "Abaya Rose Mauve com Bordados Florais",
+    "name_ar": "عباية ملكية بلون الورد الهادئ والموف بتطريز راقٍ",
+    "name_fr": "Abaya Vieux Rose Mauve avec Broderies Florales",
+    "category": "abayas",
+    "categoryName": "Abayas",
+    "categoryName_ar": "العبايات",
+    "categoryName_fr": "Abayas",
+    "price": 369.90,
+    "originalPrice": 440.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 98,
+    "description": "Exclusiva Abaya em tom rose mauve com modelagem ampla fluida e bordados botânicos claros no peito e laterais. Acompanha véu niqab combinando com caimento solto e modesto.",
+    "description_ar": "عباية إسلامية محتشمة وواسعة بلون الموف والوردي الهادئ، مطرزة بأغصان زهرية رقيقة مع خمار ونقاب ساتر متناسق.",
+    "description_fr": "Abaya exclusive rose poudré mauve à la coupe ample, brodée de délicats motifs floraux. Tissu haut de gamme, opaque et gracieux.",
+    "fabric": "Crepe de Seda Medina com Toque Acetinado",
+    "fabric_ar": "كريب حرير المدينة الفاخر",
+    "fabric_fr": "Crêpe de Soie de Médine Toucher Satiné",
+    "dimensions": "Tamanhos: P (135cm), M (140cm), G (145cm), GG (150cm)",
+    "dimensions_ar": "المقاسات: S (135سم)، M (140سم)، L (145سم)، XL (150سم)",
+    "dimensions_fr": "Tailles: S (135cm), M (140cm), L (145cm), XL (150cm)",
+    "colors": [
+      { "name": "Rose Mauve", "name_ar": "وردي موف هادئ", "name_fr": "Rose Mauve Poudré", "hex": "#A88B8A" }
+    ],
+    "image": "/assets/abaya-mauve-rose-embroidery.jpg",
+    "gallery": [
+      "/assets/abaya-mauve-rose-embroidery.jpg"
+    ]
+  },
+  {
+    "id": "abaya-camadas-douradas",
+    "name": "Abaya em Camadas com Filetes Dourados",
+    "name_ar": "عباية سوداء ملكية متعددة الطبقات بحواف ذهبية",
+    "name_fr": "Abaya à Volants Noire avec Liserés Dorés",
+    "category": "abayas",
+    "categoryName": "Abayas",
+    "categoryName_ar": "العبايات",
+    "categoryName_fr": "Abayas",
+    "price": 329.00,
+    "originalPrice": 390.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 110,
+    "description": "Modelagem exclusiva em camadas sobrepostas com acabamento fino em debrum dourado acetinado. Corte solto, visual majestoso e total discrição.",
+    "description_ar": "تصميم فريد بطبقات متدرجة أنيقة محاطة بحواف ذهبية ناعمة، قماش كثيف فاخر وفضفاض يمنح هيبة ووقاراً تاماً مع نقاب متناسق.",
+    "description_fr": "Coupe exclusive en étages superposés rehaussée de fins liserés dorés satinés. Confection noble, opaque et majestueuse.",
+    "fabric": "Crepe Georgette Opaco de Alta Gramatura",
+    "fabric_ar": "كريب جورجيت ملكي عالي الكثافة",
+    "fabric_fr": "Crêpe Georgette Opaque Haute Densité",
+    "dimensions": "Tamanhos: P, M, G, GG",
+    "dimensions_ar": "المقاسات: S, M, L, XL",
+    "dimensions_fr": "Tailles: S, M, L, XL",
+    "colors": [
+      { "name": "Preto e Dourado", "name_ar": "أسود بحواف ذهبية", "name_fr": "Noir & Liseré Or", "hex": "#171717" }
+    ],
+    "image": "/assets/abaya-black-layered-luxury.jpg",
+    "gallery": [
+      "/assets/abaya-black-layered-luxury.jpg",
+      "/assets/abaya-black-gold-embroidery.jpg"
+    ]
+  },
+  {
+    "id": "hijab-chiffon-dusty-pink",
+    "name": "Hijab Chiffon Seda Rosa Suave",
+    "name_ar": "حجاب شيفون حريري بطبقات باللون الوردي الهادئ",
+    "name_fr": "Hijab Mousseline de Soie Rose Poudré",
+    "category": "hijabs",
+    "categoryName": "Hijabs",
+    "categoryName_ar": "الحجابات",
+    "categoryName_fr": "Hijabs",
+    "price": 74.90,
+    "originalPrice": 89.90,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 135,
+    "description": "Hijab fluido em chiffon de seda com sobreposição delicada em tom rosa suave. Tecido leve, toque de pétala e caimento natural impecável com opacidade perfeita.",
+    "description_ar": "حجاب شيفون حريري فاخر بتدرج انسيابي بلون الوردي الهادئ الرقيق، قماش خفيف ومريح وساتر يضفي لمسة من الوقار والجمال.",
+    "description_fr": "Hijab fluide en mousseline de soie au drapé délicat rose poudré. Toucher soyeux, respirant et d'une tenue exemplaire.",
+    "fabric": "Chiffon de Seda Georgette Premium",
+    "fabric_ar": "شيفون حرير جورجيت فاخر",
+    "fabric_fr": "Mousseline de Soie Georgette Premium",
+    "dimensions": "180 cm x 75 cm",
+    "dimensions_ar": "180 سم × 75 سم",
+    "dimensions_fr": "180 cm x 75 cm",
+    "colors": [
+      { "name": "Rosa Suave", "name_ar": "وردي هادئ", "name_fr": "Rose Poudré", "hex": "#C99E98" }
+    ],
+    "image": "/assets/hijab-chiffon-dusty-pink.jpg",
+    "gallery": [
+      "/assets/hijab-chiffon-dusty-pink.jpg"
+    ]
+  },
+  {
+    "id": "hijab-chiffon-olive-green",
+    "name": "Hijab Chiffon Camadas Verde Oliva",
+    "name_ar": "حجاب شيفون انسيابي باللون الأخضر الزيتوني",
+    "name_fr": "Hijab Mousseline Fluide Vert Olive",
+    "category": "hijabs",
+    "categoryName": "Hijabs",
+    "categoryName_ar": "الحجابات",
+    "categoryName_fr": "Hijabs",
+    "price": 74.90,
+    "originalPrice": 89.90,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 160,
+    "description": "Confeccionado em crepe chiffon premium na tonalidade verde oliva profunda. Caimento impecável que valoriza a modéstia com elegância atemporal e firmeza durante o uso.",
+    "description_ar": "حجاب شيفون فاخر بدرجة الأخضر الزيتوني الهادئة، نسيج ناعم ينسدل بأناقة وثبات دون انزلاق مع حشمة ووقار كاملين.",
+    "description_fr": "Confectionné en crêpe mousseline premium vert olive profond. Tombé fluide et maintien idéal pour une élégance discrète.",
+    "fabric": "Crepe Chiffon Premium Respirável",
+    "fabric_ar": "كريب شيفون فاخر قابل للتنفس",
+    "fabric_fr": "Crêpe Mousseline Premium Respirant",
+    "dimensions": "180 cm x 75 cm",
+    "dimensions_ar": "180 سم × 75 سم",
+    "dimensions_fr": "180 cm x 75 cm",
+    "colors": [
+      { "name": "Verde Oliva", "name_ar": "أخضر زيتوني", "name_fr": "Vert Olive", "hex": "#43523B" }
+    ],
+    "image": "/assets/hijab-chiffon-olive-green.jpg",
+    "gallery": [
+      "/assets/hijab-chiffon-olive-green.jpg"
+    ]
+  },
+  {
+    "id": "hijab-chiffon-slate-blue",
+    "name": "Hijab Chiffon Camadas Azul Acinzentado",
+    "name_ar": "حجاب شيفون ملكي باللون الأزرق الرمادي الهادئ",
+    "name_fr": "Hijab Mousseline Bleu Ardoise Cendré",
+    "category": "hijabs",
+    "categoryName": "Hijabs",
+    "categoryName_ar": "الحجابات",
+    "categoryName_fr": "Hijabs",
+    "price": 74.90,
+    "originalPrice": 89.90,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 122,
+    "description": "Tonalidade azul acinzentado nobre e serena em chiffon georgette de alta densidade. Não amassa com facilidade e proporciona cobertura graciosa e discreta.",
+    "description_ar": "حجاب شيفون جورجيت عالي الجودة باللون الأزرق الرمادي الرصين، نسيج راقٍ لا يتجعد بسهولة ويوفر تغطية محتشمة ومريحة طوال اليوم.",
+    "description_fr": "Nuance bleu ardoise sobre et raffinée en mousseline georgette de haute densité. Couverture gracieuse et tissu infroissable.",
+    "fabric": "Chiffon Georgette de Alta Densidade",
+    "fabric_ar": "شيفون جورجيت عالي الكثافة",
+    "fabric_fr": "Mousseline Georgette Haute Densité",
+    "dimensions": "180 cm x 75 cm",
+    "dimensions_ar": "180 سم × 75 سم",
+    "dimensions_fr": "180 cm x 75 cm",
+    "colors": [
+      { "name": "Azul Acinzentado", "name_ar": "أزرق رمادي", "name_fr": "Bleu Ardoise", "hex": "#5B6F84" }
+    ],
+    "image": "/assets/hijab-chiffon-slate-blue.jpg",
+    "gallery": [
+      "/assets/hijab-chiffon-slate-blue.jpg"
+    ]
+  },
+  {
     "id": "niqab-classico-saudi",
     "name": "Niqab Preto Tradicional Fechado",
     "name_ar": "نقاب إسلامي أسود شرعي كلاسيكي",
@@ -33,77 +227,6 @@
     ]
   },
   {
-    "id": "hijab-chiffon-premium",
-    "name": "Hijab Chiffon Seda Premium",
-    "name_ar": "حجاب شيفون حريري فاخر",
-    "name_fr": "Hijab Mousseline de Soie Premium",
-    "category": "hijabs",
-    "categoryName": "Hijabs",
-    "categoryName_ar": "الحجابات",
-    "categoryName_fr": "Hijabs",
-    "price": 69.90,
-    "originalPrice": 89.90,
-    "isNew": true,
-    "isBestSeller": true,
-    "rating": 4.9,
-    "reviewsCount": 94,
-    "description": "Hijab em Chiffon de Seda de altíssima qualidade, com toque suave, caimento fluido impecável e opacidade perfeita. Ideal para o uso diário modesto e ocasiões solenes.",
-    "description_ar": "حجاب من شيفون الحرير عالي الجودة بملمس ناعم للغاية، وانسدال رشيق ومظهر محتشم وساتر. مثالي للاستخدام اليومي والمناسبات.",
-    "description_fr": "Hijab en mousseline de soie d'une qualité exceptionnelle, au toucher soyeux, tombé fluide impeccable et opacité parfaite. Idéal pour le quotidien modeste.",
-    "fabric": "Chiffon de Seda Georgette Premium",
-    "fabric_ar": "شيفون حرير جورجيت فاخر",
-    "fabric_fr": "Mousseline de Soie Georgette Premium",
-    "dimensions": "180 cm x 75 cm",
-    "dimensions_ar": "180 سم × 75 سم",
-    "dimensions_fr": "180 cm x 75 cm",
-    "colors": [
-      { "name": "Nude Areia", "name_ar": "رملي طبيعي", "name_fr": "Nude Sable", "hex": "#D8C7B5" },
-      { "name": "Preto Clássico", "name_ar": "أسود كلاسيكي", "name_fr": "Noir Classique", "hex": "#171717" },
-      { "name": "Verde Oliva", "name_ar": "زيتي هادئ", "name_fr": "Vert Olive", "hex": "#5B6753" },
-      { "name": "Rosa Pálido", "name_ar": "وردي محتشم", "name_fr": "Rose Pâle", "hex": "#DDBEB7" }
-    ],
-    "image": "/images/hijab-modest-pink.jpg",
-    "gallery": [
-      "/images/hijab-modest-pink.jpg",
-      "/images/hijab-style-green.jpg"
-    ]
-  },
-  {
-    "id": "hijab-jersey-modal",
-    "name": "Hijab Jersey Modal Confort",
-    "name_ar": "حجاب جيرسيه مودال مريح",
-    "name_fr": "Hijab Jersey Modal Confort",
-    "category": "hijabs",
-    "categoryName": "Hijabs",
-    "categoryName_ar": "الحجابات",
-    "categoryName_fr": "Hijabs",
-    "price": 79.90,
-    "originalPrice": 95.00,
-    "isNew": false,
-    "isBestSeller": true,
-    "rating": 5.0,
-    "reviewsCount": 112,
-    "description": "Tecido modal ultra macio, respirável e com caimento firme que dispensa alfinetes para o uso diário. Permanece no lugar o dia todo com máximo conforto e discrição.",
-    "description_ar": "قماش مودال فائق النعومة ومريح للغاية، يثبت بسهولة دون الحاجة لكثرة الدبابيس. مريح جداً لساعات طويلة ويمنح وقاراً تاماً.",
-    "description_fr": "Tissu modal ultra doux, respirant et avec une tenue parfaite sans épingles. Reste en place toute la journée avec un confort et une modestie absolus.",
-    "fabric": "Jersey Modal com Elastano",
-    "fabric_ar": "جيرسيه مودال طبيعي",
-    "fabric_fr": "Jersey Modal avec Élasthanne",
-    "dimensions": "185 cm x 70 cm",
-    "dimensions_ar": "185 سم × 70 سم",
-    "dimensions_fr": "185 cm x 70 cm",
-    "colors": [
-      { "name": "Caramelo Nobre", "name_ar": "كراميل راقي", "name_fr": "Caramel Noble", "hex": "#A47551" },
-      { "name": "Verde Musgo", "name_ar": "أخضر داكن", "name_fr": "Vert Mousse", "hex": "#4D5643" },
-      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" }
-    ],
-    "image": "/images/hijab-style-green.jpg",
-    "gallery": [
-      "/images/hijab-style-green.jpg",
-      "/images/hijab-style-brown.jpg"
-    ]
-  },
-  {
     "id": "khimar-duplo-chiffon",
     "name": "Khimar Longo Dupla Camada Shar'i",
     "name_ar": "خمار شرعي طويل بطبقتين",
@@ -129,79 +252,12 @@
     "dimensions_fr": "Devant: 110 cm | Dos: 140 cm",
     "colors": [
       { "name": "Preto Profundo", "name_ar": "أسود داكن", "name_fr": "Noir Profond", "hex": "#111111" },
-      { "name": "Azul Marinho", "name_ar": "كحلي وقور", "name_fr": "Bleu Marine", "hex": "#1A2332" },
-      { "name": "Taupe Nobre", "name_ar": "بني رمادي", "name_fr": "Taupe Noble", "hex": "#8C857B" }
+      { "name": "Azul Marinho", "name_ar": "كحلي وقور", "name_fr": "Bleu Marine", "hex": "#1A2332" }
     ],
     "image": "/images/khimar-modest.jpg",
     "gallery": [
       "/images/khimar-modest.jpg",
       "/images/hero-niqab.jpg"
-    ]
-  },
-  {
-    "id": "abaya-dubai-luxo",
-    "name": "Abaya Estilo Dubai com Bordados Nobres",
-    "name_ar": "عباية دبي الفاخرة بتطريزات أنيقة",
-    "name_fr": "Abaya Style Dubaï avec Broderies Nobles",
-    "category": "abayas",
-    "categoryName": "Abayas",
-    "categoryName_ar": "العبايات",
-    "categoryName_fr": "Abayas",
-    "price": 349.90,
-    "originalPrice": 420.00,
-    "isNew": true,
-    "isBestSeller": true,
-    "rating": 5.0,
-    "reviewsCount": 88,
-    "description": "Exclusiva Abaya inspirada na alfaiataria modesta do Golfo, com bordados delicados em fios metalizados nas mangas e na barra. Corte amplo e reto que não marca o corpo.",
-    "description_ar": "عباءة خليجية راقية بتطريز يدوي متقن على الأكمام والأطراف، قصة فضفاضة وساترة بالكامل تعكس الوقار والهيبة مع قماش ناعم الملمس.",
-    "description_fr": "Abaya exclusive inspirée de la haute couture modeste du Golfe, avec broderies délicates sur les manches et l'ourlet. Coupe ample et droite très pudique.",
-    "fabric": "Nida Premium Original dos Emirados",
-    "fabric_ar": "قماش كريب ندى إماراتي أصلي",
-    "fabric_fr": "Nida Premium Original des Émirats",
-    "dimensions": "Tamanhos: P (135cm), M (140cm), G (145cm), GG (150cm)",
-    "dimensions_ar": "المقاسات: S (135سم)، M (140سم)، L (145سم)، XL (150سم)",
-    "dimensions_fr": "Tailles: S (135cm), M (140cm), L (145cm), XL (150cm)",
-    "colors": [
-      { "name": "Preto Nobre", "name_ar": "أسود ملكي", "name_fr": "Noir Noble", "hex": "#171717" }
-    ],
-    "image": "/images/abaya-embroidery.jpg",
-    "gallery": [
-      "/images/abaya-embroidery.jpg",
-      "/images/abaya-black-classic.jpg"
-    ]
-  },
-  {
-    "id": "abaya-classica-fechada",
-    "name": "Abaya Clássica Fechada Minimalista",
-    "name_ar": "عباية إسلامية كلاسيكية فضفاضة",
-    "name_fr": "Abaya Classique Fermée Minimaliste",
-    "category": "abayas",
-    "categoryName": "Abayas",
-    "categoryName_ar": "العبايات",
-    "categoryName_fr": "Abayas",
-    "price": 279.00,
-    "originalPrice": 319.00,
-    "isNew": false,
-    "isBestSeller": true,
-    "rating": 4.9,
-    "reviewsCount": 115,
-    "description": "Design atemporal com corte solto, reto e longo, mangas com punhos discretos que facilitam o Wudu (ablução). Bolso lateral embutido e tecido 100% opaco.",
-    "description_ar": "عباية إسلامية سوداء سابغة بتصميم كلاسيكي فضفاض، أكمام مرنة مريحة عند الوضوء، وجيوب جانبية مخفية. قماش كثيف لا يشف أبداً.",
-    "description_fr": "Design intemporel avec coupe ample, droite et longue, manches pratiques pour les ablutions (Wudu). Poche latérale intégrée et tissu 100% opaque.",
-    "fabric": "Tecido Crepe Georgette Opaco e Resistente",
-    "fabric_ar": "قماش كريب ثقيل معتم",
-    "fabric_fr": "Tissu Crêpe Georgette Opaque et Résistant",
-    "dimensions": "Tamanhos: P, M, G, GG",
-    "dimensions_ar": "المقاسات: S, M, L, XL",
-    "dimensions_fr": "Tailles: S, M, L, XL",
-    "colors": [
-      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" }
-    ],
-    "image": "/images/abaya-black-classic.jpg",
-    "gallery": [
-      "/images/abaya-black-classic.jpg",
-      "/images/abaya-classic-2.jpg"
     ]
   },
   {
@@ -235,39 +291,6 @@
     "image": "/images/prayer-dress.jpg",
     "gallery": [
       "/images/prayer-dress.jpg"
-    ]
-  },
-  {
-    "id": "vestido-modesto-layla",
-    "name": "Vestido Longo Modesto Tradicional",
-    "name_ar": "ثوب إسلامي طويل فضفاض ومحتشم",
-    "name_fr": "Robe Longue Modeste Traditionnelle",
-    "category": "vestidos",
-    "categoryName": "Vestidos",
-    "categoryName_ar": "الفساتين المحتشمة",
-    "categoryName_fr": "Robes Modestes",
-    "price": 269.90,
-    "originalPrice": 320.00,
-    "isNew": true,
-    "isBestSeller": false,
-    "rating": 4.8,
-    "reviewsCount": 42,
-    "description": "Vestido longo evasê de mangas compridas, corte amplo e forro interno completo que impede qualquer transparência. Ideal para eventos solenes e passeios com recato.",
-    "description_ar": "فستان إسلامي طويل وفضفاض بأكمام كاملة ومبطن بالكامل لمنع أي شفافية. تصميم راقٍ يجمع بين الحشمة والجمال في المناسبات والزيارات.",
-    "description_fr": "Robe longue évasée à manches longues, coupe ample avec doublure intégrale garantissant une opacité totale. Idéale pour les réceptions avec pudeur.",
-    "fabric": "Toque de Seda com Forro 100% Algodão",
-    "fabric_ar": "حرير مع بطانة قطنية كاملة",
-    "fabric_fr": "Toucher Soie avec Doublure 100% Coton",
-    "dimensions": "Tamanhos: 38 ao 48",
-    "dimensions_ar": "المقاسات: 38 إلى 48",
-    "dimensions_fr": "Tailles: 38 à 48",
-    "colors": [
-      { "name": "Preto Noite", "name_ar": "أسود داكن", "name_fr": "Noir Nuit", "hex": "#171717" },
-      { "name": "Verde Floresta", "name_ar": "أخضر داكن", "name_fr": "Vert Forêt", "hex": "#1C3125" }
-    ],
-    "image": "/images/modest-fashion-dress.jpg",
-    "gallery": [
-      "/images/modest-fashion-dress.jpg"
     ]
   },
   {

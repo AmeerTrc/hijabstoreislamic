@@ -112,5 +112,22 @@ test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
     assert.equal(resAbaya.status, 200);
   });
 
+  await t.test('All 6 individual product images in /assets are accessible', async () => {
+    const assets = [
+      'abaya-black-gold-embroidery.jpg',
+      'abaya-mauve-rose-embroidery.jpg',
+      'abaya-black-layered-luxury.jpg',
+      'hijab-chiffon-dusty-pink.jpg',
+      'hijab-chiffon-olive-green.jpg',
+      'hijab-chiffon-slate-blue.jpg'
+    ];
+    for (const file of assets) {
+      const res = await fetch(`${baseUrl}/assets/${file}`);
+      assert.equal(res.status, 200, `Asset ${file} should return HTTP 200`);
+      const contentType = res.headers.get('content-type') || '';
+      assert.ok(contentType.includes('image'), `Asset ${file} should be image, got ${contentType}`);
+    }
+  });
+
   server.close();
 });

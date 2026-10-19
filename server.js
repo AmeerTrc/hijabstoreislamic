@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'public', 'assets')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Load products data
 let products = [];
