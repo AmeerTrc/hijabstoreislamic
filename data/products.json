@@ -1,0 +1,298 @@
+[
+  {
+    "id": "hijab-chiffon-premium",
+    "name": "Hijab Chiffon Seda Premium",
+    "category": "hijabs",
+    "categoryName": "Hijabs",
+    "price": 69.90,
+    "originalPrice": 89.90,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 84,
+    "description": "Hijab em Chiffon de Seda de altíssima qualidade, com toque suave, caimento fluido impecável e opacidade perfeita. Ideal para ocasiões especiais e para o dia a dia elegante.",
+    "fabric": "Chiffon de Seda Georgette Premium",
+    "dimensions": "180 cm x 75 cm",
+    "colors": [
+      { "name": "Nude Areia", "hex": "#D8C7B5" },
+      { "name": "Preto Clássico", "hex": "#171717" },
+      { "name": "Verde Oliva", "hex": "#5B6753" },
+      { "name": "Rosa Pálido", "hex": "#DDBEB7" },
+      { "name": "Azul Noturno", "hex": "#1E2A38" }
+    ],
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "hijab-jersey-modal",
+    "name": "Hijab Jersey Modal Confort",
+    "category": "hijabs",
+    "categoryName": "Hijabs",
+    "price": 79.90,
+    "originalPrice": 95.00,
+    "isNew": false,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 112,
+    "description": "Tecido modal ultra macio, respirável e com leve elasticidade que dispensa alfinetes para o uso diário. Permanece firme o dia todo com máximo conforto.",
+    "fabric": "Jersey Modal com Elastano",
+    "dimensions": "185 cm x 70 cm",
+    "colors": [
+      { "name": "Caramelo", "hex": "#A47551" },
+      { "name": "Cinza Mescla", "hex": "#8A8D8F" },
+      { "name": "Off-White", "hex": "#F5F3EF" },
+      { "name": "Bordô Nobre", "hex": "#5E1925" }
+    ],
+    "image": "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "khimar-duplo-chiffon",
+    "name": "Khimar Longo Dupla Camada",
+    "category": "khimars",
+    "categoryName": "Khimars",
+    "price": 149.90,
+    "originalPrice": 179.90,
+    "isNew": true,
+    "isBestSeller": false,
+    "rating": 4.8,
+    "reviewsCount": 46,
+    "description": "Khimar longo clássico em dupla camada de chiffon suave com faixa integrada para amarração anatômica. Proporciona cobertura modesta graciosa e leveza absoluta.",
+    "fabric": "Chiffon Real Premium (camada dupla)",
+    "dimensions": "Frente: 110 cm | Costas: 140 cm",
+    "colors": [
+      { "name": "Preto Profundo", "hex": "#111111" },
+      { "name": "Cacau Suave", "hex": "#4A3B32" },
+      { "name": "Azul Marinho", "hex": "#1A2332" },
+      { "name": "Taupe / Fendi", "hex": "#8C857B" }
+    ],
+    "image": "https://images.unsplash.com/photo-1594751543129-6701ad44e389?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1594751543129-6701ad44e389?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "khimar-medina-crepe",
+    "name": "Khimar Triangular em Crepe Medina",
+    "category": "khimars",
+    "categoryName": "Khimars",
+    "price": 139.00,
+    "originalPrice": 159.00,
+    "isNew": false,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 63,
+    "description": "Confeccionado em autêntico Crepe Medina com textura sutil e caimento pesado que não marca. Design ponta francesa com acabamento refinado nas costuras.",
+    "fabric": "Crepe de Medina Original",
+    "dimensions": "Frente: 95 cm | Costas: 125 cm",
+    "colors": [
+      { "name": "Preto", "hex": "#171717" },
+      { "name": "Terracota", "hex": "#9E4734" },
+      { "name": "Verde Esmeralda Fechado", "hex": "#274235" }
+    ],
+    "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "abaya-dubai-luxo",
+    "name": "Abaya Estilo Dubai com Detalhes Dourados",
+    "category": "abayas",
+    "categoryName": "Abayas",
+    "price": 349.90,
+    "originalPrice": 420.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 78,
+    "description": "Exclusiva Abaya aberta inspirada na alta costura de Dubai, com bordados delicados em fios metalizados dourados nas mangas e na barra. Acompanha faixa para ajuste e cinto combinando.",
+    "fabric": "Nida Premium Emiradense",
+    "dimensions": "Tamanhos: P (135cm), M (140cm), G (145cm), GG (150cm)",
+    "colors": [
+      { "name": "Preto Nobre", "hex": "#171717" },
+      { "name": "Verde Floresta", "hex": "#1C3125" },
+      { "name": "Azul Real", "hex": "#1B2A4A" }
+    ],
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "abaya-classica-fechada",
+    "name": "Abaya Clássica Fechada Minimalista",
+    "category": "abayas",
+    "categoryName": "Abayas",
+    "price": 279.00,
+    "originalPrice": 319.00,
+    "isNew": false,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 92,
+    "description": "Design atemporal com corte solto e reto, gola sutil e mangas com punhos elásticos discretos para facilidade na ablução (Wudu). Bolso lateral embutido.",
+    "fabric": "Tecido Crepe Georgette Opaco",
+    "dimensions": "Tamanhos: P, M, G, GG",
+    "colors": [
+      { "name": "Preto", "hex": "#171717" },
+      { "name": "Cinza Grafite", "hex": "#3A3D40" },
+      { "name": "Bege Areia", "hex": "#C9BCA8" }
+    ],
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "vestido-modesto-layla",
+    "name": "Vestido Modesto Evasê Layla",
+    "category": "vestidos",
+    "categoryName": "Vestidos",
+    "price": 269.90,
+    "originalPrice": 320.00,
+    "isNew": true,
+    "isBestSeller": false,
+    "rating": 4.8,
+    "reviewsCount": 39,
+    "description": "Vestido longo evasê com mangas longas estilo bispo, forro interno macio e cintura estruturada com elástico delicado. Elegância modesta para eventos, festas e momentos solenes.",
+    "fabric": "Toque de Seda acetinado com forro 100% algodão",
+    "dimensions": "Tamanhos: 38 ao 48",
+    "colors": [
+      { "name": "Verde Sálvia", "hex": "#8A9A86" },
+      { "name": "Rosé Clássico", "hex": "#C49C96" },
+      { "name": "Azul Petróleo", "hex": "#203A43" },
+      { "name": "Preto Noite", "hex": "#171717" }
+    ],
+    "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "conjunto-tunica-pantalona",
+    "name": "Conjunto Modesto Túnica e Pantalona Noor",
+    "category": "moda-feminina",
+    "categoryName": "Moda Feminina",
+    "price": 299.90,
+    "originalPrice": 350.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 54,
+    "description": "Conjunto em duas peças composto por túnica assimétrica de manga longa e calça pantalona de corte amplo com elástico anatômico no cós. Sofisticação e modéstia para o dia a dia e trabalho.",
+    "fabric": "Linho Misto com Viscose de Alta Densidade",
+    "dimensions": "Tamanhos: P, M, G, GG",
+    "colors": [
+      { "name": "Areia / Cru", "hex": "#E3D8C8" },
+      { "name": "Oliva Fechado", "hex": "#4D5643" },
+      { "name": "Preto", "hex": "#171717" }
+    ],
+    "image": "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "conjunto-oracao-islah",
+    "name": "Conjunto de Oração Premium com Bolsa",
+    "category": "oracao",
+    "categoryName": "Roupas de Oração",
+    "price": 189.90,
+    "originalPrice": 220.00,
+    "isNew": false,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 140,
+    "description": "Conjunto completo de oração (Salah) em duas peças (khimar longo com amarração + saia longa com cós elástico confortável), confeccionado em tecido fresco e suave que não amassa facilmente. Acompanha bolsa combinando para transporte discreto.",
+    "fabric": "Rayon Algodoado Ultra Fresco",
+    "dimensions": "Tamanho Único Adaptável (veste do 36 ao 50)",
+    "colors": [
+      { "name": "Branco Puro", "hex": "#FDFCFA" },
+      { "name": "Rosa Chá", "hex": "#D8B4AF" },
+      { "name": "Verde Menta Suave", "hex": "#B7CDBB" },
+      { "name": "Lilás Suave", "hex": "#C9BDD5" }
+    ],
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "vestido-oracao-inteirico",
+    "name": "Vestido de Oração Inteiriço com Hijab Embutido",
+    "category": "oracao",
+    "categoryName": "Roupas de Oração",
+    "price": 169.90,
+    "originalPrice": 199.90,
+    "isNew": true,
+    "isBestSeller": false,
+    "rating": 4.9,
+    "reviewsCount": 38,
+    "description": "Vestido de oração prático de vestir em segundos com hijab já acoplado à gola. Mangas com punhos elásticos macios que facilitam o movimento durante a oração.",
+    "fabric": "Viscolycra Premium de toque aveludado",
+    "dimensions": "Comprimento: 155 cm (altura recomendada 1,55m a 1,75m)",
+    "colors": [
+      { "name": "Azul Sereno", "hex": "#8EA4B8" },
+      { "name": "Cinza Claro", "hex": "#D3D5D7" },
+      { "name": "Preto", "hex": "#171717" }
+    ],
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "pins-magneticos-luxo",
+    "name": "Kit com 4 Pares de Pins Magnéticos de Alta Fixação",
+    "category": "acessorios",
+    "categoryName": "Acessórios",
+    "price": 49.90,
+    "originalPrice": 65.00,
+    "isNew": false,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 215,
+    "description": "Ímãs super potentes desenvolvidos especialmente para hijabs delicados como seda e chiffon. Não furam o tecido, não oxidam e seguram o hijab perfeitamente no lugar o dia inteiro.",
+    "fabric": "Metal Polido com Ímã de Neodímio Ultra Potente",
+    "dimensions": "Kit com 4 pares: Dourado, Prateado, Preto e Rose Gold",
+    "colors": [
+      { "name": "Mix Metálico (4 Cores)", "hex": "#B9A27A" }
+    ],
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "touca-underscarf-bambu",
+    "name": "Touca Underscarf Fechada em Fibra de Bambu",
+    "category": "acessorios",
+    "categoryName": "Acessórios",
+    "price": 34.90,
+    "originalPrice": 45.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 4.9,
+    "reviewsCount": 160,
+    "description": "Touca interna anatômica fechada, anti-deslizante e antibacteriana feita em fibra de bambu natural. Protege o couro cabeludo, previne frizz e evita dores de cabeça por pressão.",
+    "fabric": "95% Fibra de Bambu Ecológica, 5% Elastano",
+    "dimensions": "Tamanho Único Anatômico com faixa ajustável",
+    "colors": [
+      { "name": "Preto", "hex": "#171717" },
+      { "name": "Nude / Pele", "hex": "#D8B49B" },
+      { "name": "Branco", "hex": "#FFFFFF" },
+      { "name": "Marrom Café", "hex": "#3E2723" }
+    ],
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+    ]
+  }
+]

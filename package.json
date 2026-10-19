@@ -1,0 +1,26 @@
+{
+  "name": "hijabstoreislamic",
+  "version": "1.0.0",
+  "description": "Loja online premium de hijabs, abayas e moda modesta islâmica no Brasil",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "hijab",
+    "abaya",
+    "khimar",
+    "moda-islamica",
+    "modest-fashion",
+    "brasil",
+    "ecommerce"
+  ],
+  "author": "Hijab Store Islamic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

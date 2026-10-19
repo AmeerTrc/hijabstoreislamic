@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijab Store Islamic | Moda Modesta, Hijabs & Abayas de Luxo no Brasil</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="A sua loja de referência em moda modesta e hijabs de luxo no Brasil. Hijabs em Chiffon e Seda, Abayas inspiradas em Dubai, Khimars e roupas de oração com envio rápido para todo o país.">
+  <meta name="keywords" content="hijab brasil, abaya dubai brasil, khimar, moda modesta, roupas islamicas femininas, roupa de oracao, hijab chiffon">
+  <meta name="author" content="Hijab Store Islamic">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hijab Store Islamic | Moda Modesta & Hijabs de Luxo">
+  <meta property="og:description" content="Elegância islâmica e modéstia contemporânea. Compre hijabs, abayas e khimars com atendimento personalizado via WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23171717'/><text y='65' x='50' font-size='50' text-anchor='middle' fill='%23B9A27A' font-family='serif'>H</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    ✨ <strong>Frete Grátis</strong> para todo o Brasil em compras acima de R$ 199,00 • Parcele em até 6x • Qualidade Premium
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="logo" id="brand-logo" aria-label="Hijab Store Islamic Home">
+        <div class="logo-icon">H</div>
+        <div class="logo-text">
+          <span class="logo-title">HIJAB <span>STORE</span></span>
+          <span class="logo-subtitle">ISLAMIC • BRASIL</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#" class="nav-link active">Início</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#catalogo" class="nav-link" onclick="state.currentCategory='hijabs'; applyFilters();">Hijabs</a></li>
+          <li><a href="#catalogo" class="nav-link" onclick="state.currentCategory='abayas'; applyFilters();">Abayas</a></li>
+          <li><a href="#catalogo" class="nav-link" onclick="state.currentCategory='khimars'; applyFilters();">Khimars</a></li>
+          <li><a href="#catalogo" class="nav-link" onclick="state.currentCategory='oracao'; applyFilters();">Oração</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Search, Wishlist, Cart, Mobile Toggle) -->
+      <div class="header-actions">
+        <button class="action-btn" id="btn-search-nav" aria-label="Buscar produtos" onclick="document.getElementById('search-input').focus(); document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="action-btn" id="btn-wishlist" aria-label="Favoritos" onclick="showToast(`Você tem ${state.wishlist.length} item(ns) na sua lista de favoritos!`);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="action-badge" id="wishlist-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="action-btn" id="btn-cart" aria-label="Abrir Carrinho de Compras" onclick="openCart()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="action-badge" id="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="action-btn btn-mobile-toggle" id="btn-mobile-toggle" aria-label="Abrir menu móvel">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag">Nova Coleção 2026</span>
+        <h1 class="hero-title">Elegância Islâmica & <span>Modéstia Contemporânea</span></h1>
+        <p class="hero-description">
+          A mais refinada seleção de Hijabs em Chiffon de Seda, Abayas exclusivas no estilo Dubai, Khimars e Roupas de Oração, criadas para a mulher muçulmana no Brasil com tecidos nobres e acabamento impecável.
+        </p>
+        <div class="hero-buttons">
+          <a href="#catalogo" class="btn-primary" id="cta-shop-now">
+            <span>Comprar Agora</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="btn-secondary dynamic-whatsapp-link" target="_blank" rel="noopener noreferrer" id="cta-hero-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+            </svg>
+            <span>Fale pelo WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges Strip -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Envio para todo o Brasil</h4>
+            <p>Rastreamento rápido e seguro</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Tecidos Selecionados</h4>
+            <p>Chiffon de seda, modal & crepe</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Suporte via WhatsApp</h4>
+            <p>Atendimento humanizado</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Pagamento Seguro</h4>
+            <p>Pix imediato ou até 6x no cartão</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories Showcase Quick Selector -->
+  <section class="section-padding" style="background-color: var(--color-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Departamentos</span>
+        <h2 class="section-title">Nossas Categorias</h2>
+        <p class="section-desc">Navegue pelas principais coleções de moda modesta islâmica de alto padrão.</p>
+      </div>
+
+      <div class="category-tiles-grid">
+        
+        <div class="category-tile" data-category="hijabs">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.46.04-.92.13-1.36 1.48 1.95 3.82 3.22 6.47 3.34.62 1.44 1.76 2.63 3.21 3.29-.49 1.63-1.63 2.73-1.81 2.73z"></path>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Hijabs</h3>
+          <span class="category-tile-count">Seda, Chiffon, Modal</span>
+        </div>
+
+        <div class="category-tile" data-category="khimars">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"></path>
+              <path d="M4 14l8 8 8-8"></path>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Khimars</h3>
+          <span class="category-tile-count">Longos e Triangulares</span>
+        </div>
+
+        <div class="category-tile" data-category="abayas">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.38 3.46L16 2 12 5.5 8 2 3.62 3.46a2 2 0 0 0-1.34 2.23l1.8 15.35a2 2 0 0 0 1.99 1.77h11.86a2 2 0 0 0 1.99-1.77l1.8-15.35a2 2 0 0 0-1.34-2.23z"></path>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Abayas</h3>
+          <span class="category-tile-count">Estilo Dubai & Clássicas</span>
+        </div>
+
+        <div class="category-tile" data-category="vestidos">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Vestidos Modestos</h3>
+          <span class="category-tile-count">Evasê & Fluidos</span>
+        </div>
+
+        <div class="category-tile" data-category="moda-feminina">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Conjuntos</h3>
+          <span class="category-tile-count">Túnicas e Pantalonas</span>
+        </div>
+
+        <div class="category-tile" data-category="oracao">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Roupas de Oração</h3>
+          <span class="category-tile-count">Conjuntos com Bolsa</span>
+        </div>
+
+        <div class="category-tile" data-category="acessorios">
+          <div class="category-tile-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="category-tile-title">Acessórios</h3>
+          <span class="category-tile-count">Pins Magnéticos & Toucas</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog Section -->
+  <section class="section-padding catalog-section" id="catalogo">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle">Catálogo Completo</span>
+        <h2 class="section-title">Coleção Hijab Store</h2>
+        <p class="section-desc" id="catalog-results-count">Carregando produtos...</p>
+      </div>
+
+      <!-- Controls (Search, Category Pills, Sort) -->
+      <div class="catalog-controls">
+        
+        <div class="controls-top">
+          
+          <div class="search-box">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" placeholder="Buscar por hijab, abaya, cor ou tecido..." aria-label="Buscar produtos">
+            <span class="clear-search" id="clear-search-btn" title="Limpar busca">&times;</span>
+          </div>
+
+          <div class="sort-select-wrapper">
+            <label for="sort-select">Ordenar por:</label>
+            <select id="sort-select">
+              <option value="featured">Relevância / Destaques</option>
+              <option value="price-asc">Menor Preço</option>
+              <option value="price-desc">Maior Preço</option>
+              <option value="rating">Mais Bem Avaliados</option>
+              <option value="new">Novidades Primeiro</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="filter-pills" id="filter-pills-container">
+          <button class="filter-pill active" data-category="todos">Todos os Produtos</button>
+          <button class="filter-pill" data-category="hijabs">Hijabs</button>
+          <button class="filter-pill" data-category="khimars">Khimars</button>
+          <button class="filter-pill" data-category="abayas">Abayas</button>
+          <button class="filter-pill" data-category="vestidos">Vestidos</button>
+          <button class="filter-pill" data-category="moda-feminina">Moda Feminina</button>
+          <button class="filter-pill" data-category="oracao">Roupas de Oração</button>
+          <button class="filter-pill" data-category="acessorios">Acessórios</button>
+        </div>
+
+      </div>
+
+      <!-- Dynamic Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Luxury Promotional Feature Banner -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-grid">
+        <div>
+          <span class="promo-badge">Atendimento Consultivo</span>
+          <h2 class="promo-title">Dúvidas sobre o tecido ideal ou como combinar suas peças?</h2>
+          <p class="promo-desc">
+            Nossa equipe de consultoria de moda modesta está disponível no WhatsApp para te ajudar a escolher o tom perfeito para sua pele, explicar a respirabilidade de cada tecido e montar combinações harmoniosas para eventos especiais.
+          </p>
+          <a href="#" class="btn-primary dynamic-whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+            </svg>
+            <span>Falar com uma Especialista</span>
+          </a>
+        </div>
+        <div>
+          <div class="promo-card-box">
+            <h3>Cupom de Boas-Vindas</h3>
+            <p style="color: #E0E0E0; margin-bottom: 16px;">Use o cupom na sua primeira compra e ganhe 10% de desconto:</p>
+            <div style="background-color: var(--color-charcoal); border: 1px dashed var(--color-gold); padding: 12px; border-radius: var(--radius-sm); font-size: 1.2rem; font-weight: 700; color: var(--color-gold); letter-spacing: 2px;">
+              BEMVINDA10
+            </div>
+            <p style="font-size: 0.78rem; color: var(--color-light-silver); margin-top: 12px;">Válido para todo o site em compras acima de R$ 99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-section" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1594751543129-6701ad44e389?auto=format&fit=crop&w=1000&q=80" alt="Moda Modesta e Hijab no Brasil">
+          <div class="about-floating-badge">
+            <strong>100%</strong>
+            <span>Modéstia & Luxo</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Sobre a Hijab Store</span>
+          <h2>Moda Modesta com Propósito, Respeito e Sofisticação</h2>
+          <p>
+            A <strong>Hijab Store Islamic</strong> nasceu da paixão por proporcionar às mulheres muçulmanas e adeptas da moda modesta no Brasil o acesso a peças que unem a dignidade e modéstia islâmica aos mais altos padrões de elegância contemporânea.
+          </p>
+          <p>
+            Selecionamos minuciosamente tecidos leves, respiráveis e confortáveis para o clima brasileiro — como chiffon de seda georgette, crepe medina, jersey modal e nida original — garantindo caimento impecável, opacidade e durabilidade em cada criação.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tecidos respiráveis e nobres</span>
+            </div>
+            <div class="about-feat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Modelagens sem transparência</span>
+            </div>
+            <div class="about-feat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Envio com embalagem especial</span>
+            </div>
+            <div class="about-feat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Garantia de troca facilitada</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Showcase (Instagram & TikTok) -->
+  <section class="social-showcase-section">
+    <div class="container">
+      
+      <!-- Instagram Showcase -->
+      <div class="section-header">
+        <span class="section-subtitle">Siga nosso Instagram</span>
+        <h2 class="section-title">@hijabstoreislamic</h2>
+        <p class="section-desc">Inspirações diárias de estilo modesto, lançamentos e bastidores da nossa marca.</p>
+      </div>
+
+      <div class="instagram-grid">
+        <a href="#" class="insta-card dynamic-instagram-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Instagram Post Hijab">
+          <div class="insta-overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Ver no Instagram</span>
+          </div>
+        </a>
+
+        <a href="#" class="insta-card dynamic-instagram-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Instagram Post Abaya Dubai">
+          <div class="insta-overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Ver no Instagram</span>
+          </div>
+        </a>
+
+        <a href="#" class="insta-card dynamic-instagram-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=600&q=80" alt="Instagram Post Khimar">
+          <div class="insta-overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Ver no Instagram</span>
+          </div>
+        </a>
+
+        <a href="#" class="insta-card dynamic-instagram-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Instagram Post Roupa de Oração">
+          <div class="insta-overlay">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Ver no Instagram</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- TikTok Showcase -->
+      <div class="tiktok-header">
+        <div>
+          <span class="section-subtitle">TikTok Vídeos</span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--color-charcoal);">Tutoriais & Estilo Rápido</h3>
+        </div>
+        <a href="#" class="btn-secondary dynamic-tiktok-link" style="color: var(--color-charcoal); border-color: var(--color-charcoal);" target="_blank" rel="noopener noreferrer">
+          <span>Ver no TikTok</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="tiktok-grid">
+        <div class="tiktok-card dynamic-tiktok-link">
+          <div class="tiktok-media">
+            <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=600&q=80" alt="Tutorial Hijab em 30 segundos">
+            <div class="tiktok-play-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <div class="tiktok-caption">
+              <strong>Tutorial:</strong> 3 formas elegantes de usar seu hijab chiffon sem furar com alfinetes ✨
+            </div>
+          </div>
+        </div>
+
+        <div class="tiktok-card dynamic-tiktok-link">
+          <div class="tiktok-media">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Look Modesto com Abaya">
+            <div class="tiktok-play-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <div class="tiktok-caption">
+              <strong>Inspiração:</strong> Como combinar nossa Abaya Dubai aberta para festas e recepções 💎
+            </div>
+          </div>
+        </div>
+
+        <div class="tiktok-card dynamic-tiktok-link">
+          <div class="tiktok-media">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Pins Magnéticos Teste de Força">
+            <div class="tiktok-play-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <div class="tiktok-caption">
+              <strong>Dica de Ouro:</strong> Testamos o poder dos pins magnéticos no vento forte do dia a dia 🧲
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <h3>Receba Lançamentos & Benefícios VIP</h3>
+        <p>Cadastre seu e-mail para receber cupons exclusivos, avisos de reposição de hijabs e novidades em primeira mão.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="Digite seu melhor e-mail..." required aria-label="E-mail para newsletter">
+          <button type="submit" class="btn-primary">Inscrever-se</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer" id="contato">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Column 1: Store info -->
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom: 16px;">
+            <div class="logo-icon">H</div>
+            <div class="logo-text">
+              <span class="logo-title">HIJAB <span>STORE</span></span>
+              <span class="logo-subtitle">ISLAMIC • BRASIL</span>
+            </div>
+          </div>
+          <p>
+            Moda modesta islâmica de alto luxo no Brasil. Hijabs, Khimars, Abayas e Roupas de Oração selecionadas com excelência e sofisticação.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-btn dynamic-instagram-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-btn dynamic-tiktok-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-btn dynamic-whatsapp-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Coleções</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo" onclick="state.currentCategory='hijabs'; applyFilters();">Hijabs em Seda & Chiffon</a></li>
+            <li><a href="#catalogo" onclick="state.currentCategory='abayas'; applyFilters();">Abayas de Luxo</a></li>
+            <li><a href="#catalogo" onclick="state.currentCategory='khimars'; applyFilters();">Khimars Tradicionais</a></li>
+            <li><a href="#catalogo" onclick="state.currentCategory='vestidos'; applyFilters();">Vestidos Modestos</a></li>
+            <li><a href="#catalogo" onclick="state.currentCategory='oracao'; applyFilters();">Conjuntos de Oração</a></li>
+            <li><a href="#catalogo" onclick="state.currentCategory='acessorios'; applyFilters();">Pins & Acessórios</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Institutional & Customer Service -->
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showToast('Política de Envio: Entregas para todo o Brasil via Correios e Transportadoras.')">Formas de Envio</a></li>
+            <li><a href="#" onclick="showToast('Trocas e Devoluções garantidas em até 7 dias corridos após o recebimento.')">Trocas e Devoluções</a></li>
+            <li><a href="#" onclick="showToast('Guia de Medidas: P (1,55m a 1,60m), M (1,61m a 1,68m), G (1,69m a 1,75m).')">Guia de Medidas</a></li>
+            <li><a href="#" onclick="showToast('Privacidade: Seus dados estão seguros e nunca são compartilhados.')">Política de Privacidade</a></li>
+            <li><a href="#" onclick="showToast('Dúvidas Frequentes: Fale com nossa equipe pelo WhatsApp.')">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Schedule -->
+        <div class="footer-col">
+          <h4>Fale Conosco</h4>
+          <ul class="contact-info-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>WhatsApp: Atendimento Humanizado</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>E-mail: contato@hijabstoreislamic.com</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Segunda a Sábado: 09h às 19h</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>
+          &copy; 2026 <strong>Hijab Store Islamic</strong>. Todos os direitos reservados. Moda Modesta com Elegância e Respeito.
+        </div>
+        <div class="payment-badges">
+          <span class="payment-badge">PIX Imadiato</span>
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Boleto</span>
+          <span class="payment-badge">Elo</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Widget -->
+  <a href="#" class="floating-whatsapp dynamic-whatsapp-link" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+    <span class="whatsapp-ping"></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+    </svg>
+    <span>Fale pelo WhatsApp</span>
+  </a>
+
+  <!-- Backdrop for Modals and Drawer -->
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+
+  <!-- Quick View Product Modal -->
+  <div class="modal-dialog" id="product-modal">
+    <button class="modal-close-btn" onclick="closeModal()" aria-label="Fechar janela">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="modal-content-grid">
+      <!-- Media Gallery -->
+      <div>
+        <div class="modal-gallery-main">
+          <img id="modal-main-img" src="" alt="Produto">
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Details & Actions -->
+      <div class="modal-details">
+        <span class="card-category" id="modal-category">Categoria</span>
+        <h2 id="modal-title">Título do Produto</h2>
+
+        <div class="modal-price-box">
+          <div class="modal-price" id="modal-price">R$ 0,00</div>
+          <span class="modal-original-price" id="modal-original-price">R$ 0,00</span>
+        </div>
+
+        <p class="modal-desc" id="modal-desc">Descrição do produto...</p>
+
+        <!-- Product Specs -->
+        <div class="modal-spec-list">
+          <div class="modal-spec-item">
+            <span class="modal-spec-label">Tecido:</span>
+            <span id="modal-spec-fabric">Chiffon Premium</span>
+          </div>
+          <div class="modal-spec-item">
+            <span class="modal-spec-label">Dimensões / Tamanhos:</span>
+            <span id="modal-spec-dimensions">Padrão</span>
+          </div>
+          <div class="modal-spec-item">
+            <span class="modal-spec-label">Disponibilidade:</span>
+            <span style="color: #2e7d32; font-weight: 600;">Em Estoque no Brasil</span>
+          </div>
+        </div>
+
+        <!-- Colors Selection -->
+        <div class="modal-color-group" id="modal-colors-wrapper">
+          <span class="group-title">Selecione a Cor:</span>
+          <div class="color-options" id="modal-colors">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Quantity & CTAs -->
+        <div class="modal-actions-row">
+          <div class="quantity-picker">
+            <button class="qty-btn" onclick="adjustModalQty(-1)" aria-label="Diminuir">-</button>
+            <input type="text" class="qty-input" id="modal-qty-input" value="1" readonly>
+            <button class="qty-btn" onclick="adjustModalQty(1)" aria-label="Aumentar">+</button>
+          </div>
+
+          <button class="btn-modal-add" onclick="addModalProductToCart()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Adicionar à Sacola
+          </button>
+        </div>
+
+        <button class="btn-modal-whatsapp" style="width: 100%; margin-top: 12px;" onclick="buyViaWhatsAppModal()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+          </svg>
+          Comprar Direto pelo WhatsApp
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Slide-out Drawer -->
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Compras">
+    <div class="cart-header">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Sua Sacola <span>de Compras</span>
+      </h3>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Fechar carrinho">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cart-body">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="cart-footer" id="cart-footer" style="display: none;">
+      
+      <!-- Coupon row -->
+      <div class="cart-coupon-row">
+        <input type="text" id="coupon-input" placeholder="Cupom de desconto (ex: BEMVINDA10)">
+        <button type="button" onclick="applyCoupon()">Aplicar</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Subtotal:</span>
+        <span id="cart-subtotal">R$ 0,00</span>
+      </div>
+
+      <div class="cart-summary-line" id="cart-discount-row" style="display: none; color: #2e7d32;">
+        <span>Desconto do Cupom:</span>
+        <span id="cart-discount">-R$ 0,00</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Frete:</span>
+        <span id="cart-shipping">Calcular</span>
+      </div>
+
+      <div class="cart-summary-line total">
+        <span>Total:</span>
+        <span id="cart-total">R$ 0,00</span>
+      </div>
+
+      <button class="cart-checkout-btn" onclick="checkoutWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.802.814 2.801.814 3.182 0 5.768-2.587 5.768-5.767 0-3.18-2.586-5.769-5.777-5.769zm10.22 5.768c0 5.64-4.582 10.22-10.22 10.22-1.745 0-3.374-.44-4.819-1.218l-5.462 1.432 1.458-5.328c-.899-1.49-1.407-3.23-1.407-5.106 0-5.64 4.582-10.22 10.23-10.22 5.638 0 10.22 4.58 10.22 10.22z"/>
+        </svg>
+        Finalizar Pedido pelo WhatsApp
+      </button>
+
+      <p style="font-size: 0.72rem; color: var(--color-medium-gray); text-align: center; margin-top: 10px;">
+        Ao clicar, seu pedido será enviado pronto e formatado para o nosso WhatsApp.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
