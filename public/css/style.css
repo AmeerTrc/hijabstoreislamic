@@ -14,26 +14,29 @@
 :root {
   --color-charcoal: #171717;
   --color-dark-gray: #222222;
-  --color-card-dark: #1f1f1f;
-  --color-medium-gray: #666666;
+  --color-card-dark: #222222;
+  --color-medium-gray: #303030;
   --color-light-silver: #BDBDBD;
-  --color-border-light: #E5E1D8;
-  --color-ivory: #F5F3EF;
-  --color-ivory-light: #FAF9F6;
-  --color-white: #FFFFFF;
+  --color-border-light: #2E2E2E;
+  --color-border-dark: #333333;
+  --color-ivory: #171717;
+  --color-ivory-light: #1A1A1A;
+  --color-white: #222222;
   --color-gold: #B9A27A;
-  --color-gold-hover: #A08B65;
-  --color-gold-light: #F2ECE1;
+  --color-gold-hover: #D4BE97;
+  --color-gold-light: rgba(185, 162, 122, 0.2);
   --color-gold-glow: rgba(185, 162, 122, 0.25);
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #BDBDBD;
   
   --font-heading: 'Cinzel', serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-arabic-heading: 'Amiri', 'Cinzel', serif;
   --font-arabic-body: 'Cairo', 'Plus Jakarta Sans', sans-serif;
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.7);
   --shadow-gold: 0 4px 20px var(--color-gold-glow);
   
   --radius-sm: 6px;
@@ -60,8 +63,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-ivory);
-  color: var(--color-charcoal);
+  background-color: #171717;
+  color: #FFFFFF;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -567,12 +570,12 @@ input, select, textarea {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 12px;
 }
 
 .section-desc {
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   font-size: 0.98rem;
 }
 
@@ -583,8 +586,8 @@ input, select, textarea {
 }
 
 .category-tile {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border-light);
+  background-color: #222222;
+  border: 1px solid #303030;
   border-radius: var(--radius-md);
   padding: 24px 16px;
   text-align: center;
@@ -606,7 +609,7 @@ input, select, textarea {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: var(--color-ivory);
+  background-color: #2A2A2A;
   color: var(--color-gold);
   display: flex;
   align-items: center;
@@ -617,33 +620,33 @@ input, select, textarea {
 
 .category-tile:hover .category-tile-icon {
   background-color: var(--color-gold);
-  color: var(--color-white);
+  color: #171717;
 }
 
 .category-tile-title {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 4px;
 }
 
 .category-tile-count {
   font-size: 0.78rem;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
 }
 
 /* ===================================================================
    MAIN CATALOG SECTION & CONTROLS
    =================================================================== */
 .catalog-section {
-  background-color: var(--color-ivory-light);
-  border-top: 1px solid var(--color-border-light);
-  border-bottom: 1px solid var(--color-border-light);
+  background-color: #171717;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
 }
 
 .catalog-controls {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border-light);
+  background-color: #222222;
+  border: 1px solid #303030;
   border-radius: var(--radius-md);
   padding: 18px 24px;
   margin-bottom: 32px;
@@ -670,10 +673,10 @@ input, select, textarea {
 .search-box input {
   width: 100%;
   padding: 12px 16px 12px 42px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: var(--color-ivory-light);
-  color: var(--color-charcoal);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
   outline: none;
   transition: border-color var(--transition-fast);
 }
@@ -684,7 +687,7 @@ input, select, textarea {
 
 .search-box input:focus {
   border-color: var(--color-gold);
-  background-color: var(--color-white);
+  background-color: #242424;
 }
 
 .search-icon {
@@ -692,7 +695,7 @@ input, select, textarea {
   left: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   pointer-events: none;
 }
 
@@ -706,7 +709,7 @@ input, select, textarea {
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   font-size: 1.1rem;
   display: none;
   cursor: pointer;
@@ -725,18 +728,23 @@ input, select, textarea {
 
 .sort-select-wrapper label {
   font-size: 0.88rem;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   white-space: nowrap;
 }
 
 .sort-select-wrapper select {
   padding: 10px 14px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: var(--color-white);
-  color: var(--color-charcoal);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
   outline: none;
   cursor: pointer;
+}
+
+.sort-select-wrapper select option {
+  background-color: #222222;
+  color: #FFFFFF;
 }
 
 /* Category Filter Pills */
@@ -751,12 +759,12 @@ input, select, textarea {
 
 .filter-pill {
   padding: 8px 18px;
-  background-color: var(--color-ivory);
-  border: 1px solid var(--color-border-light);
+  background-color: #222222;
+  border: 1px solid #303030;
   border-radius: var(--radius-full);
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--color-charcoal);
+  color: #BDBDBD;
   white-space: nowrap;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -768,10 +776,10 @@ input, select, textarea {
 }
 
 .filter-pill.active {
-  background-color: var(--color-charcoal);
-  color: var(--color-gold);
-  border-color: var(--color-charcoal);
-  font-weight: 600;
+  background-color: var(--color-gold);
+  color: #171717;
+  border-color: var(--color-gold);
+  font-weight: 700;
 }
 
 /* Products Grid */
@@ -783,8 +791,8 @@ input, select, textarea {
 
 /* Product Card */
 .product-card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border-light);
+  background-color: #222222;
+  border: 1px solid #2E2E2E;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -805,7 +813,7 @@ input, select, textarea {
   width: 100%;
   padding-top: 125%; /* 4:5 luxury ratio */
   overflow: hidden;
-  background-color: #f0ede6;
+  background-color: #1A1A1A;
 }
 
 .card-media img {
@@ -848,14 +856,14 @@ input, select, textarea {
 }
 
 .badge-new {
-  background-color: var(--color-charcoal);
+  background-color: #171717;
   color: var(--color-gold);
   border: 1px solid var(--color-gold);
 }
 
 .badge-bestseller {
   background-color: var(--color-gold);
-  color: var(--color-charcoal);
+  color: #171717;
 }
 
 /* Wishlist Button */
@@ -866,14 +874,15 @@ input, select, textarea {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(34, 34, 34, 0.85);
   backdrop-filter: blur(4px);
-  color: var(--color-charcoal);
+  color: #BDBDBD;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
   box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 [dir="rtl"] .card-wishlist-btn {
@@ -882,13 +891,13 @@ input, select, textarea {
 }
 
 .card-wishlist-btn:hover {
-  background-color: var(--color-white);
-  color: #D32F2F;
+  background-color: #303030;
+  color: #FF5252;
   transform: scale(1.1);
 }
 
 .card-wishlist-btn.active {
-  color: #D32F2F;
+  color: #FF5252;
 }
 
 /* Quick Action Overlay */
@@ -899,7 +908,7 @@ input, select, textarea {
   right: 12px;
   padding: 10px;
   background-color: rgba(23, 23, 23, 0.9);
-  color: var(--color-white);
+  color: #FFFFFF;
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
   font-weight: 600;
@@ -920,7 +929,7 @@ input, select, textarea {
 
 .card-overlay-btn:hover {
   background-color: var(--color-gold);
-  color: var(--color-charcoal);
+  color: #171717;
 }
 
 /* Card Info */
@@ -944,7 +953,7 @@ input, select, textarea {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 8px;
   line-height: 1.35;
   min-height: 44px;
@@ -960,7 +969,7 @@ input, select, textarea {
 }
 
 .card-rating-count {
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   font-size: 0.75rem;
 }
 
@@ -975,7 +984,7 @@ input, select, textarea {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .card-bottom {
@@ -984,7 +993,7 @@ input, select, textarea {
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
-  border-top: 1px solid var(--color-border-light);
+  border-top: 1px solid #2C2C2C;
 }
 
 .card-price-wrapper {
@@ -994,18 +1003,18 @@ input, select, textarea {
 
 .card-original-price {
   font-size: 0.78rem;
-  color: var(--color-medium-gray);
+  color: #888888;
   text-decoration: line-through;
 }
 
 .card-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .btn-add-cart {
-  background-color: var(--color-charcoal);
+  background-color: #171717;
   color: var(--color-gold);
   width: 42px;
   height: 42px;
@@ -1014,11 +1023,12 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   transition: all var(--transition-fast);
+  border: 1px solid #303030;
 }
 
 .btn-add-cart:hover {
   background-color: var(--color-gold);
-  color: var(--color-charcoal);
+  color: #171717;
   transform: scale(1.05);
 }
 
@@ -1027,9 +1037,10 @@ input, select, textarea {
   grid-column: 1 / -1;
   text-align: center;
   padding: 60px 20px;
-  background-color: var(--color-white);
+  background-color: #222222;
   border-radius: var(--radius-md);
-  border: 1px dashed var(--color-border-light);
+  border: 1px dashed #3A3A3A;
+  color: #BDBDBD;
 }
 
 .empty-catalog svg {
@@ -1099,7 +1110,7 @@ input, select, textarea {
    ABOUT US SECTION (Authentic, dignified)
    =================================================================== */
 .about-section {
-  background-color: var(--color-white);
+  background-color: #171717;
   padding: 80px 0;
 }
 
@@ -1126,7 +1137,7 @@ input, select, textarea {
   position: absolute;
   bottom: -20px;
   right: -20px;
-  background-color: var(--color-charcoal);
+  background-color: #222222;
   color: var(--color-gold);
   border: 2px solid var(--color-gold);
   border-radius: var(--radius-md);
@@ -1151,18 +1162,18 @@ input, select, textarea {
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: #FFFFFF;
 }
 
 .about-content h2 {
   font-family: var(--font-heading);
   font-size: 2.2rem;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 
 .about-content p {
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   margin-bottom: 18px;
   line-height: 1.8;
 }
@@ -1180,7 +1191,7 @@ input, select, textarea {
   gap: 10px;
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .about-feat svg {
@@ -1192,7 +1203,7 @@ input, select, textarea {
    SOCIAL MEDIA SHOWCASE: INSTAGRAM & TIKTOK
    =================================================================== */
 .social-showcase-section {
-  background-color: var(--color-ivory);
+  background-color: #1A1A1A;
   padding: 80px 0;
 }
 
@@ -1297,8 +1308,9 @@ input, select, textarea {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #111;
+  background-color: rgba(34, 34, 34, 0.85);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1313,6 +1325,7 @@ input, select, textarea {
   background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, transparent 100%);
   font-size: 0.85rem;
   line-height: 1.4;
+  color: #FFFFFF;
 }
 
 /* ===================================================================
@@ -1320,9 +1333,9 @@ input, select, textarea {
    =================================================================== */
 .newsletter-section {
   background: linear-gradient(135deg, #191919 0%, #121212 100%);
-  color: var(--color-white);
+  color: #FFFFFF;
   padding: 60px 0;
-  border-top: 1px solid var(--color-border-light);
+  border-top: 1px solid #282828;
   text-align: center;
 }
 
@@ -1339,7 +1352,7 @@ input, select, textarea {
 }
 
 .newsletter-box p {
-  color: var(--color-light-silver);
+  color: #BDBDBD;
   font-size: 0.95rem;
   margin-bottom: 24px;
 }
@@ -1354,10 +1367,10 @@ input, select, textarea {
 .newsletter-form input {
   flex: 1;
   padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: rgba(255, 255, 255, 0.08);
-  color: var(--color-white);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
   outline: none;
 }
 
@@ -1588,7 +1601,8 @@ input, select, textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -46%) scale(0.96);
-  background-color: var(--color-white);
+  background-color: #222222;
+  border: 1px solid #303030;
   border-radius: var(--radius-md);
   max-width: 900px;
   width: 92%;
@@ -1614,8 +1628,8 @@ input, select, textarea {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--color-ivory);
-  color: var(--color-charcoal);
+  background-color: #303030;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1629,8 +1643,8 @@ input, select, textarea {
 }
 
 .modal-close-btn:hover {
-  background-color: var(--color-charcoal);
-  color: var(--color-white);
+  background-color: var(--color-gold);
+  color: #171717;
 }
 
 .modal-content-grid {
@@ -1644,7 +1658,7 @@ input, select, textarea {
   border-radius: var(--radius-sm);
   overflow: hidden;
   margin-bottom: 12px;
-  background-color: #f2efe9;
+  background-color: #1A1A1A;
 }
 
 .modal-gallery-main img {
@@ -1675,7 +1689,7 @@ input, select, textarea {
   font-family: var(--font-heading);
   font-size: 1.6rem;
   margin-bottom: 8px;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .modal-price-box {
@@ -1688,24 +1702,25 @@ input, select, textarea {
 .modal-price {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 .modal-original-price {
   font-size: 1.1rem;
-  color: var(--color-medium-gray);
+  color: #888888;
   text-decoration: line-through;
 }
 
 .modal-desc {
   font-size: 0.92rem;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
 .modal-spec-list {
-  background-color: var(--color-ivory);
+  background-color: #1A1A1A;
+  border: 1px solid #2C2C2C;
   padding: 14px 18px;
   border-radius: var(--radius-sm);
   margin-bottom: 24px;
@@ -1716,7 +1731,7 @@ input, select, textarea {
   display: flex;
   justify-content: space-between;
   padding: 6px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .modal-spec-item:last-child {
@@ -1725,7 +1740,7 @@ input, select, textarea {
 
 .modal-spec-label {
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
 }
 
 /* Color Options in Modal */
@@ -1738,6 +1753,7 @@ input, select, textarea {
   font-weight: 600;
   margin-bottom: 8px;
   display: block;
+  color: #FFFFFF;
 }
 
 .color-options {
@@ -1751,16 +1767,18 @@ input, select, textarea {
   align-items: center;
   gap: 8px;
   padding: 6px 12px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
   cursor: pointer;
-  background-color: var(--color-white);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .color-option-btn.selected {
   border-color: var(--color-gold);
-  background-color: var(--color-gold-light);
+  background-color: rgba(185, 162, 122, 0.2);
+  color: #FFFFFF;
   font-weight: 600;
 }
 
@@ -1768,7 +1786,7 @@ input, select, textarea {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Quantity & Action Buttons */
@@ -1782,9 +1800,9 @@ input, select, textarea {
 .quantity-picker {
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: var(--color-white);
+  background-color: #1A1A1A;
 }
 
 .qty-btn {
@@ -1794,7 +1812,7 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -1804,12 +1822,14 @@ input, select, textarea {
   border: none;
   font-weight: 600;
   outline: none;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .btn-modal-add {
   flex: 1;
   padding: 13px 20px;
-  background-color: var(--color-charcoal);
+  background-color: #171717;
   color: var(--color-gold);
   font-weight: 700;
   border-radius: var(--radius-sm);
@@ -1817,11 +1837,12 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  border: 1px solid #303030;
 }
 
 .btn-modal-add:hover {
   background-color: var(--color-gold);
-  color: var(--color-charcoal);
+  color: #171717;
 }
 
 .btn-modal-whatsapp {
@@ -1851,9 +1872,10 @@ input, select, textarea {
   width: 450px;
   max-width: 95vw;
   height: 100vh;
-  background-color: var(--color-white);
+  background-color: #222222;
+  border-left: 1px solid #303030;
   z-index: 210;
-  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.25);
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   transition: right var(--transition-normal), left var(--transition-normal);
@@ -1862,7 +1884,9 @@ input, select, textarea {
 [dir="rtl"] .cart-drawer {
   right: auto;
   left: -460px;
-  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.25);
+  border-left: none;
+  border-right: 1px solid #303030;
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.6);
 }
 
 .cart-drawer.active {
@@ -1876,12 +1900,12 @@ input, select, textarea {
 
 .cart-header {
   padding: 22px 24px;
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid #303030;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-charcoal);
-  color: var(--color-white);
+  background-color: #171717;
+  color: #FFFFFF;
 }
 
 .cart-header h3 {
@@ -1918,7 +1942,7 @@ input, select, textarea {
   display: flex;
   gap: 14px;
   padding: 16px 0;
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid #2C2C2C;
 }
 
 .cart-item-img {
@@ -1938,13 +1962,13 @@ input, select, textarea {
 .cart-item-title {
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   margin-bottom: 4px;
 }
 
 .cart-item-meta {
   font-size: 0.78rem;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   margin-bottom: 8px;
 }
 
@@ -1957,27 +1981,30 @@ input, select, textarea {
 
 .cart-item-price {
   font-weight: 700;
-  color: var(--color-charcoal);
+  color: #FFFFFF;
   font-size: 0.98rem;
 }
 
 .cart-qty-ctrl {
   display: flex;
   align-items: center;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: var(--color-ivory-light);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
 }
 
 .cart-qty-ctrl button {
   padding: 2px 8px;
   font-size: 0.9rem;
+  color: #FFFFFF;
 }
 
 .cart-qty-ctrl span {
   padding: 0 8px;
   font-size: 0.85rem;
   font-weight: 600;
+  color: #FFFFFF;
 }
 
 .cart-item-remove {
@@ -1987,25 +2014,25 @@ input, select, textarea {
 }
 
 .cart-item-remove:hover {
-  color: #D32F2F;
+  color: #FF5252;
 }
 
 .cart-empty {
   text-align: center;
   padding: 60px 10px;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
 }
 
 .cart-empty svg {
   margin: 0 auto 16px auto;
-  color: var(--color-border-light);
+  color: #383838;
 }
 
 /* Cart Footer */
 .cart-footer {
   padding: 20px 24px;
-  border-top: 1px solid var(--color-border-light);
-  background-color: var(--color-ivory-light);
+  border-top: 1px solid #303030;
+  background-color: #171717;
 }
 
 .cart-coupon-row {
@@ -2017,17 +2044,19 @@ input, select, textarea {
 .cart-coupon-row input {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid #303030;
   border-radius: var(--radius-sm);
-  background-color: var(--color-white);
+  background-color: #222222;
+  color: #FFFFFF;
   font-size: 0.85rem;
   text-transform: uppercase;
 }
 
 .cart-coupon-row button {
   padding: 8px 14px;
-  background-color: var(--color-charcoal);
+  background-color: #303030;
   color: var(--color-gold);
+  border: 1px solid #383838;
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.82rem;
@@ -2037,15 +2066,15 @@ input, select, textarea {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
-  color: var(--color-medium-gray);
+  color: #BDBDBD;
   margin-bottom: 8px;
 }
 
 .cart-summary-line.total {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-charcoal);
-  border-top: 1px solid var(--color-border-light);
+  color: #FFFFFF;
+  border-top: 1px solid #303030;
   padding-top: 10px;
   margin-top: 10px;
 }
@@ -2089,8 +2118,9 @@ input, select, textarea {
 }
 
 .toast {
-  background-color: var(--color-charcoal);
-  color: var(--color-white);
+  background-color: #222222;
+  color: #FFFFFF;
+  border: 1px solid #303030;
   border-left: 4px solid var(--color-gold);
   padding: 14px 20px;
   border-radius: var(--radius-sm);
@@ -2103,7 +2133,7 @@ input, select, textarea {
 }
 
 [dir="rtl"] .toast {
-  border-left: none;
+  border-left: 1px solid #303030;
   border-right: 4px solid var(--color-gold);
 }
 
@@ -2229,3 +2259,14 @@ input, select, textarea {
     width: 100%;
   }
 }
+
+/* ===================================================================
+   PERMANENT DARK LUXURY THEME ENFORCEMENT
+   =================================================================== */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #171717 !important;
+    color: #FFFFFF !important;
+  }
+}
+

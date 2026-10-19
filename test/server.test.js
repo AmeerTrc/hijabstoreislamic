@@ -24,13 +24,20 @@ test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
     res.json({ status: 'ok', service: 'hijabstoreislamic' });
   });
 
+  // Load config
+  let storeConfig = { storeName: 'Hijab Store Islamic', whatsappNumber: '', instagramUrl: '', tiktokUrl: '' };
+  try {
+    const configData = fs.readFileSync(path.join(__dirname, '..', 'data', 'config.json'), 'utf-8');
+    storeConfig = { ...storeConfig, ...JSON.parse(configData) };
+  } catch (err) {}
+
   // Config endpoint
   app.get('/api/config', (req, res) => {
     res.json({
-      storeName: 'Hijab Store Islamic',
-      whatsappNumber: process.env.WHATSAPP_NUMBER || '',
-      instagramUrl: process.env.INSTAGRAM_URL || '',
-      tiktokUrl: process.env.TIKTOK_URL || '',
+      storeName: storeConfig.storeName,
+      whatsappNumber: process.env.WHATSAPP_NUMBER || storeConfig.whatsappNumber || '',
+      instagramUrl: process.env.INSTAGRAM_URL || storeConfig.instagramUrl || '',
+      tiktokUrl: process.env.TIKTOK_URL || storeConfig.tiktokUrl || '',
       currency: 'BRL'
     });
   });
@@ -65,13 +72,13 @@ test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
     assert.equal(data.status, 'ok');
   });
 
-  await t.test('GET /api/config returns safe empty default links when unset', async () => {
+  await t.test('GET /api/config returns official social media links and safe WhatsApp configuration', async () => {
     const res = await fetch(`${baseUrl}/api/config`);
     assert.equal(res.status, 200);
     const data = await res.json();
     assert.equal(typeof data.whatsappNumber, 'string');
-    assert.equal(typeof data.instagramUrl, 'string');
-    assert.equal(typeof data.tiktokUrl, 'string');
+    assert.equal(data.instagramUrl, 'https://www.instagram.com/hijabstoreislamic/?hl=ar');
+    assert.equal(data.tiktokUrl, 'https://www.tiktok.com/@hijabstore_islamic');
   });
 
   await t.test('GET /api/products returns modest Islamic products with Arabic and French translations', async () => {
