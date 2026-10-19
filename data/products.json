@@ -1,298 +1,338 @@
 [
   {
+    "id": "niqab-classico-saudi",
+    "name": "Niqab Preto Tradicional Fechado",
+    "name_ar": "نقاب إسلامي أسود شرعي كلاسيكي",
+    "name_fr": "Niqab Noir Traditionnel Fermé",
+    "category": "niqabs",
+    "categoryName": "Niqabs",
+    "categoryName_ar": "النقاب",
+    "categoryName_fr": "Niqabs",
+    "price": 89.90,
+    "originalPrice": 110.00,
+    "isNew": true,
+    "isBestSeller": true,
+    "rating": 5.0,
+    "reviewsCount": 128,
+    "description": "Niqab tradicional em crepe chiffon respirável de toque extra suave, com amarração traseira ajustável e corte anatômico confortável que não aperta a testa. Cobertura modesta impecável com total opacidade.",
+    "description_ar": "نقاب إسلامي شرعي مصنوع من كريب الشيفون الفاخر فائق النعومة والقابل للتنفس، برباط خلفي قابل للتعديل وقصة مريحة للعينين والجبين. ساتر بالكامل وذو سواد حالك غير شفاف.",
+    "description_fr": "Niqab traditionnel en crêpe mousseline respirant au toucher extra doux, avec attache arrière ajustable et coupe anatomique confortable. Couverture modeste parfaite et totale opacité.",
+    "fabric": "Crepe Chiffon Real Ultra Respirável",
+    "fabric_ar": "كريب شيفون ملكي فائق التنفس",
+    "fabric_fr": "Crêpe Mousseline Royale Ultra Respirante",
+    "dimensions": "45 cm x 40 cm (Ajustável)",
+    "dimensions_ar": "45 سم × 40 سم (قابل للتعديل)",
+    "dimensions_fr": "45 cm x 40 cm (Ajustable)",
+    "colors": [
+      { "name": "Preto Puro", "name_ar": "أسود فاحم", "name_fr": "Noir Pur", "hex": "#111111" }
+    ],
+    "image": "/images/niqab-saudi.jpg",
+    "gallery": [
+      "/images/niqab-saudi.jpg",
+      "/images/hero-niqab.jpg"
+    ]
+  },
+  {
     "id": "hijab-chiffon-premium",
     "name": "Hijab Chiffon Seda Premium",
+    "name_ar": "حجاب شيفون حريري فاخر",
+    "name_fr": "Hijab Mousseline de Soie Premium",
     "category": "hijabs",
     "categoryName": "Hijabs",
+    "categoryName_ar": "الحجابات",
+    "categoryName_fr": "Hijabs",
     "price": 69.90,
     "originalPrice": 89.90,
     "isNew": true,
     "isBestSeller": true,
     "rating": 4.9,
-    "reviewsCount": 84,
-    "description": "Hijab em Chiffon de Seda de altíssima qualidade, com toque suave, caimento fluido impecável e opacidade perfeita. Ideal para ocasiões especiais e para o dia a dia elegante.",
+    "reviewsCount": 94,
+    "description": "Hijab em Chiffon de Seda de altíssima qualidade, com toque suave, caimento fluido impecável e opacidade perfeita. Ideal para o uso diário modesto e ocasiões solenes.",
+    "description_ar": "حجاب من شيفون الحرير عالي الجودة بملمس ناعم للغاية، وانسدال رشيق ومظهر محتشم وساتر. مثالي للاستخدام اليومي والمناسبات.",
+    "description_fr": "Hijab en mousseline de soie d'une qualité exceptionnelle, au toucher soyeux, tombé fluide impeccable et opacité parfaite. Idéal pour le quotidien modeste.",
     "fabric": "Chiffon de Seda Georgette Premium",
+    "fabric_ar": "شيفون حرير جورجيت فاخر",
+    "fabric_fr": "Mousseline de Soie Georgette Premium",
     "dimensions": "180 cm x 75 cm",
+    "dimensions_ar": "180 سم × 75 سم",
+    "dimensions_fr": "180 cm x 75 cm",
     "colors": [
-      { "name": "Nude Areia", "hex": "#D8C7B5" },
-      { "name": "Preto Clássico", "hex": "#171717" },
-      { "name": "Verde Oliva", "hex": "#5B6753" },
-      { "name": "Rosa Pálido", "hex": "#DDBEB7" },
-      { "name": "Azul Noturno", "hex": "#1E2A38" }
+      { "name": "Nude Areia", "name_ar": "رملي طبيعي", "name_fr": "Nude Sable", "hex": "#D8C7B5" },
+      { "name": "Preto Clássico", "name_ar": "أسود كلاسيكي", "name_fr": "Noir Classique", "hex": "#171717" },
+      { "name": "Verde Oliva", "name_ar": "زيتي هادئ", "name_fr": "Vert Olive", "hex": "#5B6753" },
+      { "name": "Rosa Pálido", "name_ar": "وردي محتشم", "name_fr": "Rose Pâle", "hex": "#DDBEB7" }
     ],
-    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/hijab-modest-pink.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80"
+      "/images/hijab-modest-pink.jpg",
+      "/images/hijab-style-green.jpg"
     ]
   },
   {
     "id": "hijab-jersey-modal",
     "name": "Hijab Jersey Modal Confort",
+    "name_ar": "حجاب جيرسيه مودال مريح",
+    "name_fr": "Hijab Jersey Modal Confort",
     "category": "hijabs",
     "categoryName": "Hijabs",
+    "categoryName_ar": "الحجابات",
+    "categoryName_fr": "Hijabs",
     "price": 79.90,
     "originalPrice": 95.00,
     "isNew": false,
     "isBestSeller": true,
     "rating": 5.0,
     "reviewsCount": 112,
-    "description": "Tecido modal ultra macio, respirável e com leve elasticidade que dispensa alfinetes para o uso diário. Permanece firme o dia todo com máximo conforto.",
+    "description": "Tecido modal ultra macio, respirável e com caimento firme que dispensa alfinetes para o uso diário. Permanece no lugar o dia todo com máximo conforto e discrição.",
+    "description_ar": "قماش مودال فائق النعومة ومريح للغاية، يثبت بسهولة دون الحاجة لكثرة الدبابيس. مريح جداً لساعات طويلة ويمنح وقاراً تاماً.",
+    "description_fr": "Tissu modal ultra doux, respirant et avec une tenue parfaite sans épingles. Reste en place toute la journée avec un confort et une modestie absolus.",
     "fabric": "Jersey Modal com Elastano",
+    "fabric_ar": "جيرسيه مودال طبيعي",
+    "fabric_fr": "Jersey Modal avec Élasthanne",
     "dimensions": "185 cm x 70 cm",
+    "dimensions_ar": "185 سم × 70 سم",
+    "dimensions_fr": "185 cm x 70 cm",
     "colors": [
-      { "name": "Caramelo", "hex": "#A47551" },
-      { "name": "Cinza Mescla", "hex": "#8A8D8F" },
-      { "name": "Off-White", "hex": "#F5F3EF" },
-      { "name": "Bordô Nobre", "hex": "#5E1925" }
+      { "name": "Caramelo Nobre", "name_ar": "كراميل راقي", "name_fr": "Caramel Noble", "hex": "#A47551" },
+      { "name": "Verde Musgo", "name_ar": "أخضر داكن", "name_fr": "Vert Mousse", "hex": "#4D5643" },
+      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" }
     ],
-    "image": "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/hijab-style-green.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80"
+      "/images/hijab-style-green.jpg",
+      "/images/hijab-style-brown.jpg"
     ]
   },
   {
     "id": "khimar-duplo-chiffon",
-    "name": "Khimar Longo Dupla Camada",
+    "name": "Khimar Longo Dupla Camada Shar'i",
+    "name_ar": "خمار شرعي طويل بطبقتين",
+    "name_fr": "Khimar Long Double Couche Shar'i",
     "category": "khimars",
     "categoryName": "Khimars",
+    "categoryName_ar": "الخمار",
+    "categoryName_fr": "Khimars",
     "price": 149.90,
     "originalPrice": 179.90,
     "isNew": true,
-    "isBestSeller": false,
-    "rating": 4.8,
-    "reviewsCount": 46,
-    "description": "Khimar longo clássico em dupla camada de chiffon suave com faixa integrada para amarração anatômica. Proporciona cobertura modesta graciosa e leveza absoluta.",
-    "fabric": "Chiffon Real Premium (camada dupla)",
-    "dimensions": "Frente: 110 cm | Costas: 140 cm",
-    "colors": [
-      { "name": "Preto Profundo", "hex": "#111111" },
-      { "name": "Cacau Suave", "hex": "#4A3B32" },
-      { "name": "Azul Marinho", "hex": "#1A2332" },
-      { "name": "Taupe / Fendi", "hex": "#8C857B" }
-    ],
-    "image": "https://images.unsplash.com/photo-1594751543129-6701ad44e389?auto=format&fit=crop&w=800&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1594751543129-6701ad44e389?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    "id": "khimar-medina-crepe",
-    "name": "Khimar Triangular em Crepe Medina",
-    "category": "khimars",
-    "categoryName": "Khimars",
-    "price": 139.00,
-    "originalPrice": 159.00,
-    "isNew": false,
     "isBestSeller": true,
     "rating": 4.9,
-    "reviewsCount": 63,
-    "description": "Confeccionado em autêntico Crepe Medina com textura sutil e caimento pesado que não marca. Design ponta francesa com acabamento refinado nas costuras.",
-    "fabric": "Crepe de Medina Original",
-    "dimensions": "Frente: 95 cm | Costas: 125 cm",
+    "reviewsCount": 86,
+    "description": "Khimar longo clássico em dupla camada de chiffon suave com faixa integrada para amarração anatômica. Proporciona cobertura modesta graciosa e leveza absoluta.",
+    "description_ar": "خمار شرعي ساتر طويل بطبقتين من الشيفون الرقيق غير الشفاف، مزود برباط رأس مدمج لثبات تام وتغطية شرعية سابغة.",
+    "description_fr": "Khimar long classique en double couche de mousseline douce avec bandeau intégré. Offre une couverture modeste gracieuse et une légèreté absolue.",
+    "fabric": "Chiffon Real Premium (Camada Dupla)",
+    "fabric_ar": "شيفون ملكي مزدوج غير شفاف",
+    "fabric_fr": "Mousseline Royale Premium (Double Couche)",
+    "dimensions": "Frente: 110 cm | Costas: 140 cm",
+    "dimensions_ar": "الأمام: 110 سم | الخلف: 140 سم",
+    "dimensions_fr": "Devant: 110 cm | Dos: 140 cm",
     "colors": [
-      { "name": "Preto", "hex": "#171717" },
-      { "name": "Terracota", "hex": "#9E4734" },
-      { "name": "Verde Esmeralda Fechado", "hex": "#274235" }
+      { "name": "Preto Profundo", "name_ar": "أسود داكن", "name_fr": "Noir Profond", "hex": "#111111" },
+      { "name": "Azul Marinho", "name_ar": "كحلي وقور", "name_fr": "Bleu Marine", "hex": "#1A2332" },
+      { "name": "Taupe Nobre", "name_ar": "بني رمادي", "name_fr": "Taupe Noble", "hex": "#8C857B" }
     ],
-    "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/khimar-modest.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80"
+      "/images/khimar-modest.jpg",
+      "/images/hero-niqab.jpg"
     ]
   },
   {
     "id": "abaya-dubai-luxo",
-    "name": "Abaya Estilo Dubai com Detalhes Dourados",
+    "name": "Abaya Estilo Dubai com Bordados Nobres",
+    "name_ar": "عباية دبي الفاخرة بتطريزات أنيقة",
+    "name_fr": "Abaya Style Dubaï avec Broderies Nobles",
     "category": "abayas",
     "categoryName": "Abayas",
+    "categoryName_ar": "العبايات",
+    "categoryName_fr": "Abayas",
     "price": 349.90,
     "originalPrice": 420.00,
     "isNew": true,
     "isBestSeller": true,
     "rating": 5.0,
-    "reviewsCount": 78,
-    "description": "Exclusiva Abaya aberta inspirada na alta costura de Dubai, com bordados delicados em fios metalizados dourados nas mangas e na barra. Acompanha faixa para ajuste e cinto combinando.",
-    "fabric": "Nida Premium Emiradense",
+    "reviewsCount": 88,
+    "description": "Exclusiva Abaya inspirada na alfaiataria modesta do Golfo, com bordados delicados em fios metalizados nas mangas e na barra. Corte amplo e reto que não marca o corpo.",
+    "description_ar": "عباءة خليجية راقية بتطريز يدوي متقن على الأكمام والأطراف، قصة فضفاضة وساترة بالكامل تعكس الوقار والهيبة مع قماش ناعم الملمس.",
+    "description_fr": "Abaya exclusive inspirée de la haute couture modeste du Golfe, avec broderies délicates sur les manches et l'ourlet. Coupe ample et droite très pudique.",
+    "fabric": "Nida Premium Original dos Emirados",
+    "fabric_ar": "قماش كريب ندى إماراتي أصلي",
+    "fabric_fr": "Nida Premium Original des Émirats",
     "dimensions": "Tamanhos: P (135cm), M (140cm), G (145cm), GG (150cm)",
+    "dimensions_ar": "المقاسات: S (135سم)، M (140سم)، L (145سم)، XL (150سم)",
+    "dimensions_fr": "Tailles: S (135cm), M (140cm), L (145cm), XL (150cm)",
     "colors": [
-      { "name": "Preto Nobre", "hex": "#171717" },
-      { "name": "Verde Floresta", "hex": "#1C3125" },
-      { "name": "Azul Real", "hex": "#1B2A4A" }
+      { "name": "Preto Nobre", "name_ar": "أسود ملكي", "name_fr": "Noir Noble", "hex": "#171717" }
     ],
-    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/abaya-embroidery.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
+      "/images/abaya-embroidery.jpg",
+      "/images/abaya-black-classic.jpg"
     ]
   },
   {
     "id": "abaya-classica-fechada",
     "name": "Abaya Clássica Fechada Minimalista",
+    "name_ar": "عباية إسلامية كلاسيكية فضفاضة",
+    "name_fr": "Abaya Classique Fermée Minimaliste",
     "category": "abayas",
     "categoryName": "Abayas",
+    "categoryName_ar": "العبايات",
+    "categoryName_fr": "Abayas",
     "price": 279.00,
     "originalPrice": 319.00,
     "isNew": false,
     "isBestSeller": true,
     "rating": 4.9,
-    "reviewsCount": 92,
-    "description": "Design atemporal com corte solto e reto, gola sutil e mangas com punhos elásticos discretos para facilidade na ablução (Wudu). Bolso lateral embutido.",
-    "fabric": "Tecido Crepe Georgette Opaco",
+    "reviewsCount": 115,
+    "description": "Design atemporal com corte solto, reto e longo, mangas com punhos discretos que facilitam o Wudu (ablução). Bolso lateral embutido e tecido 100% opaco.",
+    "description_ar": "عباية إسلامية سوداء سابغة بتصميم كلاسيكي فضفاض، أكمام مرنة مريحة عند الوضوء، وجيوب جانبية مخفية. قماش كثيف لا يشف أبداً.",
+    "description_fr": "Design intemporel avec coupe ample, droite et longue, manches pratiques pour les ablutions (Wudu). Poche latérale intégrée et tissu 100% opaque.",
+    "fabric": "Tecido Crepe Georgette Opaco e Resistente",
+    "fabric_ar": "قماش كريب ثقيل معتم",
+    "fabric_fr": "Tissu Crêpe Georgette Opaque et Résistant",
     "dimensions": "Tamanhos: P, M, G, GG",
+    "dimensions_ar": "المقاسات: S, M, L, XL",
+    "dimensions_fr": "Tailles: S, M, L, XL",
     "colors": [
-      { "name": "Preto", "hex": "#171717" },
-      { "name": "Cinza Grafite", "hex": "#3A3D40" },
-      { "name": "Bege Areia", "hex": "#C9BCA8" }
+      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" }
     ],
-    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/abaya-black-classic.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    "id": "vestido-modesto-layla",
-    "name": "Vestido Modesto Evasê Layla",
-    "category": "vestidos",
-    "categoryName": "Vestidos",
-    "price": 269.90,
-    "originalPrice": 320.00,
-    "isNew": true,
-    "isBestSeller": false,
-    "rating": 4.8,
-    "reviewsCount": 39,
-    "description": "Vestido longo evasê com mangas longas estilo bispo, forro interno macio e cintura estruturada com elástico delicado. Elegância modesta para eventos, festas e momentos solenes.",
-    "fabric": "Toque de Seda acetinado com forro 100% algodão",
-    "dimensions": "Tamanhos: 38 ao 48",
-    "colors": [
-      { "name": "Verde Sálvia", "hex": "#8A9A86" },
-      { "name": "Rosé Clássico", "hex": "#C49C96" },
-      { "name": "Azul Petróleo", "hex": "#203A43" },
-      { "name": "Preto Noite", "hex": "#171717" }
-    ],
-    "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    "id": "conjunto-tunica-pantalona",
-    "name": "Conjunto Modesto Túnica e Pantalona Noor",
-    "category": "moda-feminina",
-    "categoryName": "Moda Feminina",
-    "price": 299.90,
-    "originalPrice": 350.00,
-    "isNew": true,
-    "isBestSeller": true,
-    "rating": 4.9,
-    "reviewsCount": 54,
-    "description": "Conjunto em duas peças composto por túnica assimétrica de manga longa e calça pantalona de corte amplo com elástico anatômico no cós. Sofisticação e modéstia para o dia a dia e trabalho.",
-    "fabric": "Linho Misto com Viscose de Alta Densidade",
-    "dimensions": "Tamanhos: P, M, G, GG",
-    "colors": [
-      { "name": "Areia / Cru", "hex": "#E3D8C8" },
-      { "name": "Oliva Fechado", "hex": "#4D5643" },
-      { "name": "Preto", "hex": "#171717" }
-    ],
-    "image": "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80",
-    "gallery": [
-      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80"
+      "/images/abaya-black-classic.jpg",
+      "/images/abaya-classic-2.jpg"
     ]
   },
   {
     "id": "conjunto-oracao-islah",
-    "name": "Conjunto de Oração Premium com Bolsa",
+    "name": "Conjunto de Oração Islah com Bolsa",
+    "name_ar": "طقم صلاة إسلامي كامل مع حقيبة حفظ",
+    "name_fr": "Ensemble de Prière Islah avec Pochette",
     "category": "oracao",
     "categoryName": "Roupas de Oração",
+    "categoryName_ar": "ملابس الصلاة",
+    "categoryName_fr": "Tenues de Prière",
     "price": 189.90,
     "originalPrice": 220.00,
     "isNew": false,
     "isBestSeller": true,
     "rating": 5.0,
-    "reviewsCount": 140,
-    "description": "Conjunto completo de oração (Salah) em duas peças (khimar longo com amarração + saia longa com cós elástico confortável), confeccionado em tecido fresco e suave que não amassa facilmente. Acompanha bolsa combinando para transporte discreto.",
+    "reviewsCount": 156,
+    "description": "Conjunto completo de oração (Salah) em duas peças (khimar longo com amarração + saia longa com cós elástico confortável), confeccionado em tecido fresco e suave. Acompanha bolsa combinando para transporte discreto.",
+    "description_ar": "طقم صلاة شرعي كامل يتكون من قطعتين (خمار ساتر طويل مع رباط للرأس + تنورة فضفاضة واسعة بمطاط مريح)، خفيف وبارد ولا يشف. يشمل حقيبة أنيقة.",
+    "description_fr": "Ensemble complet de prière (Salah) en deux pièces (khimar long avec attache + jupe longue ample), confectionné dans un tissu frais et doux. Livré avec sa pochette assortie.",
     "fabric": "Rayon Algodoado Ultra Fresco",
+    "fabric_ar": "قطن رايون ناعم ومريح",
+    "fabric_fr": "Rayonne Cotonnière Ultra Fraîche",
     "dimensions": "Tamanho Único Adaptável (veste do 36 ao 50)",
+    "dimensions_ar": "مقاس موحد واسع يناسب الجميع",
+    "dimensions_fr": "Taille Unique Adaptable (du 36 au 50)",
     "colors": [
-      { "name": "Branco Puro", "hex": "#FDFCFA" },
-      { "name": "Rosa Chá", "hex": "#D8B4AF" },
-      { "name": "Verde Menta Suave", "hex": "#B7CDBB" },
-      { "name": "Lilás Suave", "hex": "#C9BDD5" }
+      { "name": "Branco Puro", "name_ar": "أبيض ناصع", "name_fr": "Blanc Pur", "hex": "#FDFCFA" },
+      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" }
     ],
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/prayer-dress.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+      "/images/prayer-dress.jpg"
     ]
   },
   {
-    "id": "vestido-oracao-inteirico",
-    "name": "Vestido de Oração Inteiriço com Hijab Embutido",
-    "category": "oracao",
-    "categoryName": "Roupas de Oração",
-    "price": 169.90,
-    "originalPrice": 199.90,
+    "id": "vestido-modesto-layla",
+    "name": "Vestido Longo Modesto Tradicional",
+    "name_ar": "ثوب إسلامي طويل فضفاض ومحتشم",
+    "name_fr": "Robe Longue Modeste Traditionnelle",
+    "category": "vestidos",
+    "categoryName": "Vestidos",
+    "categoryName_ar": "الفساتين المحتشمة",
+    "categoryName_fr": "Robes Modestes",
+    "price": 269.90,
+    "originalPrice": 320.00,
     "isNew": true,
     "isBestSeller": false,
-    "rating": 4.9,
-    "reviewsCount": 38,
-    "description": "Vestido de oração prático de vestir em segundos com hijab já acoplado à gola. Mangas com punhos elásticos macios que facilitam o movimento durante a oração.",
-    "fabric": "Viscolycra Premium de toque aveludado",
-    "dimensions": "Comprimento: 155 cm (altura recomendada 1,55m a 1,75m)",
+    "rating": 4.8,
+    "reviewsCount": 42,
+    "description": "Vestido longo evasê de mangas compridas, corte amplo e forro interno completo que impede qualquer transparência. Ideal para eventos solenes e passeios com recato.",
+    "description_ar": "فستان إسلامي طويل وفضفاض بأكمام كاملة ومبطن بالكامل لمنع أي شفافية. تصميم راقٍ يجمع بين الحشمة والجمال في المناسبات والزيارات.",
+    "description_fr": "Robe longue évasée à manches longues, coupe ample avec doublure intégrale garantissant une opacité totale. Idéale pour les réceptions avec pudeur.",
+    "fabric": "Toque de Seda com Forro 100% Algodão",
+    "fabric_ar": "حرير مع بطانة قطنية كاملة",
+    "fabric_fr": "Toucher Soie avec Doublure 100% Coton",
+    "dimensions": "Tamanhos: 38 ao 48",
+    "dimensions_ar": "المقاسات: 38 إلى 48",
+    "dimensions_fr": "Tailles: 38 à 48",
     "colors": [
-      { "name": "Azul Sereno", "hex": "#8EA4B8" },
-      { "name": "Cinza Claro", "hex": "#D3D5D7" },
-      { "name": "Preto", "hex": "#171717" }
+      { "name": "Preto Noite", "name_ar": "أسود داكن", "name_fr": "Noir Nuit", "hex": "#171717" },
+      { "name": "Verde Floresta", "name_ar": "أخضر داكن", "name_fr": "Vert Forêt", "hex": "#1C3125" }
     ],
-    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/modest-fashion-dress.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+      "/images/modest-fashion-dress.jpg"
     ]
   },
   {
     "id": "pins-magneticos-luxo",
-    "name": "Kit com 4 Pares de Pins Magnéticos de Alta Fixação",
+    "name": "Kit 4 Pares de Pins Magnéticos de Alta Fixação",
+    "name_ar": "طقم دبابيس مغناطيسية قوية للحجاب (4 أزواج)",
+    "name_fr": "Lot de 4 Paires d'Épingles Magnétiques Fortes",
     "category": "acessorios",
     "categoryName": "Acessórios",
+    "categoryName_ar": "الإكسسوارات",
+    "categoryName_fr": "Accessoires",
     "price": 49.90,
     "originalPrice": 65.00,
     "isNew": false,
     "isBestSeller": true,
     "rating": 5.0,
     "reviewsCount": 215,
-    "description": "Ímãs super potentes desenvolvidos especialmente para hijabs delicados como seda e chiffon. Não furam o tecido, não oxidam e seguram o hijab perfeitamente no lugar o dia inteiro.",
+    "description": "Ímãs potentes desenvolvidos para tecidos nobres como seda e chiffon. Não perfuram, não rasgam o tecido e mantêm o hijab perfeitamente fixo o dia inteiro sem danificar.",
+    "description_ar": "مغناطيس نيوديميوم قوي جداً مخصص لأقمشة الحجاب الحساسة كالحرير والشيفون. يثبت الحجاب دون إحداث ثقوب أو تمزقات في القماش ويدوم طويلاً.",
+    "description_fr": "Aimants surpuissants spécialement conçus pour les tissus délicats comme la soie et le chiffon. Ne trouent pas le tissu et maintiennent le hijab parfaitement en place.",
     "fabric": "Metal Polido com Ímã de Neodímio Ultra Potente",
+    "fabric_ar": "معدن مصقول بمغناطيس نيوديميوم",
+    "fabric_fr": "Métal Poli avec Aimant Néodyme Ultra Puissant",
     "dimensions": "Kit com 4 pares: Dourado, Prateado, Preto e Rose Gold",
+    "dimensions_ar": "طقم 4 أزواج: ذهبي، فضي، أسود، ووردي ذهبي",
+    "dimensions_fr": "Lot de 4 paires: Doré, Argenté, Noir et Or Rose",
     "colors": [
-      { "name": "Mix Metálico (4 Cores)", "hex": "#B9A27A" }
+      { "name": "Mix Metálico", "name_ar": "تشكيلة ميتاليك", "name_fr": "Mix Métallique", "hex": "#B9A27A" }
     ],
-    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/accessories-pins.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80"
+      "/images/accessories-pins.jpg"
     ]
   },
   {
     "id": "touca-underscarf-bambu",
     "name": "Touca Underscarf Fechada em Fibra de Bambu",
+    "name_ar": "بندانة حجاب قطنية مغلقة من ألياف الخيزران",
+    "name_fr": "Bonnet Underscarf Fermé en Fibre de Bambou",
     "category": "acessorios",
     "categoryName": "Acessórios",
+    "categoryName_ar": "الإكسسوارات",
+    "categoryName_fr": "Accessoires",
     "price": 34.90,
     "originalPrice": 45.00,
     "isNew": true,
     "isBestSeller": true,
     "rating": 4.9,
     "reviewsCount": 160,
-    "description": "Touca interna anatômica fechada, anti-deslizante e antibacteriana feita em fibra de bambu natural. Protege o couro cabeludo, previne frizz e evita dores de cabeça por pressão.",
+    "description": "Touca interna anatômica fechada, anti-deslizante e antibacteriana feita em fibra de bambu natural. Protege o cabelo, evita o atrito e previne dores de cabeça por pressão.",
+    "description_ar": "بندانة داخلية مغلقة لتثبيت الحجاب ومنع انزلاقه، مصنوعة من ألياف البامبو الطبيعية الناعمة والمانعة للحساسية وضغط الرأس.",
+    "description_fr": "Bonnet intérieur anatomique fermé, antidérapant et antibactérien en fibre de bambou naturelle. Protège les cheveux et évite les maux de tête.",
     "fabric": "95% Fibra de Bambu Ecológica, 5% Elastano",
-    "dimensions": "Tamanho Único Anatômico com faixa ajustável",
+    "fabric_ar": "95% ألياف خيزران طبيعية، 5% إيلاستين",
+    "fabric_fr": "95% Fibre de Bambou Écologique, 5% Élasthanne",
+    "dimensions": "Tamanho Único Anatômico com Faixa Ajustável",
+    "dimensions_ar": "مقاس موحد مطاطي مريح",
+    "dimensions_fr": "Taille Unique Anatomique avec Bande Ajustable",
     "colors": [
-      { "name": "Preto", "hex": "#171717" },
-      { "name": "Nude / Pele", "hex": "#D8B49B" },
-      { "name": "Branco", "hex": "#FFFFFF" },
-      { "name": "Marrom Café", "hex": "#3E2723" }
+      { "name": "Preto", "name_ar": "أسود", "name_fr": "Noir", "hex": "#171717" },
+      { "name": "Nude / Bege", "name_ar": "بيج / نود", "name_fr": "Nude / Beige", "hex": "#D8B49B" }
     ],
-    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    "image": "/images/underscarf-cap.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+      "/images/underscarf-cap.jpg"
     ]
   }
 ]

@@ -9,7 +9,7 @@
    - Soft Gold:     #B9A27A
    =================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
   --color-charcoal: #171717;
@@ -28,6 +28,8 @@
   
   --font-heading: 'Cinzel', serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic-heading: 'Amiri', 'Cinzel', serif;
+  --font-arabic-body: 'Cairo', 'Plus Jakarta Sans', sans-serif;
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -65,6 +67,24 @@ body {
   overflow-x: hidden;
 }
 
+/* RTL Support for Arabic */
+[dir="rtl"] body {
+  font-family: var(--font-arabic-body);
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .hero-title,
+[dir="rtl"] .section-title,
+[dir="rtl"] .logo-title,
+[dir="rtl"] .footer-col h4,
+[dir="rtl"] .promo-title,
+[dir="rtl"] .about-content h2,
+[dir="rtl"] .card-title,
+[dir="rtl"] .modal-details h2 {
+  font-family: var(--font-arabic-heading);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -92,13 +112,13 @@ input, select, textarea {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 /* ===================================================================
-   TOP ANNOUNCEMENT BAR
+   TOP ANNOUNCEMENT BAR & UTILITY
    =================================================================== */
 .announcement-bar {
   background: linear-gradient(90deg, #111111 0%, #1f1f1f 50%, #111111 100%);
@@ -117,6 +137,96 @@ input, select, textarea {
   font-weight: 600;
 }
 
+/* Top Utility Bar (Social Icons & Language Switcher) */
+.top-utility-bar {
+  background-color: #121212;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 0;
+  font-size: 0.82rem;
+  color: var(--color-light-silver);
+}
+
+.utility-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Real Social Media Icons */
+.header-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #E0E0E0;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.social-header-btn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(185, 162, 122, 0.4);
+}
+
+.social-header-btn.btn-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #FFFFFF;
+}
+
+.social-header-btn.btn-tiktok:hover {
+  background-color: #000000;
+  color: #00f2fe;
+}
+
+.social-header-btn.btn-whatsapp:hover {
+  background-color: #25D366;
+  color: #FFFFFF;
+}
+
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  padding: 3px 6px;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #CCCCCC;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  color: var(--color-gold);
+}
+
+.lang-btn.active {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
 /* ===================================================================
    NAVIGATION & HEADER (Dark / Charcoal)
    =================================================================== */
@@ -128,7 +238,6 @@ input, select, textarea {
   z-index: 100;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  transition: background-color var(--transition-normal);
 }
 
 .header-container {
@@ -147,8 +256,8 @@ input, select, textarea {
 }
 
 .logo-icon {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   background: linear-gradient(135deg, var(--color-gold) 0%, #7d6b4a 100%);
   border-radius: var(--radius-sm);
   display: flex;
@@ -157,7 +266,7 @@ input, select, textarea {
   color: #111;
   font-weight: 800;
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   box-shadow: 0 2px 10px rgba(185, 162, 122, 0.3);
 }
 
@@ -190,7 +299,7 @@ input, select, textarea {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 24px;
   list-style: none;
 }
 
@@ -214,6 +323,11 @@ input, select, textarea {
   transition: width var(--transition-fast);
 }
 
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
+}
+
 .nav-link:hover,
 .nav-link.active {
   color: var(--color-gold);
@@ -228,7 +342,7 @@ input, select, textarea {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .action-btn {
@@ -264,22 +378,27 @@ input, select, textarea {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
+[dir="rtl"] .action-badge {
+  right: auto;
+  left: 2px;
+}
+
 .btn-mobile-toggle {
   display: none;
 }
 
 /* ===================================================================
-   HERO BANNER
+   HERO BANNER (Niqab & Abaya Authentic Modest Luxury)
    =================================================================== */
 .hero-section {
   position: relative;
-  min-height: 580px;
-  background: linear-gradient(135deg, rgba(23, 23, 23, 0.9) 0%, rgba(34, 34, 34, 0.8) 100%),
-              url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  min-height: 600px;
+  background: linear-gradient(135deg, rgba(23, 23, 23, 0.88) 0%, rgba(34, 34, 34, 0.72) 100%),
+              url('/images/hero-niqab.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   color: var(--color-white);
-  padding: 60px 0;
+  padding: 70px 0;
   border-bottom: 2px solid var(--color-gold);
 }
 
@@ -559,6 +678,10 @@ input, select, textarea {
   transition: border-color var(--transition-fast);
 }
 
+[dir="rtl"] .search-box input {
+  padding: 12px 42px 12px 16px;
+}
+
 .search-box input:focus {
   border-color: var(--color-gold);
   background-color: var(--color-white);
@@ -573,6 +696,11 @@ input, select, textarea {
   pointer-events: none;
 }
 
+[dir="rtl"] .search-icon {
+  left: auto;
+  right: 14px;
+}
+
 .clear-search {
   position: absolute;
   right: 12px;
@@ -582,6 +710,11 @@ input, select, textarea {
   font-size: 1.1rem;
   display: none;
   cursor: pointer;
+}
+
+[dir="rtl"] .clear-search {
+  right: auto;
+  left: 12px;
 }
 
 .sort-select-wrapper {
@@ -604,10 +737,6 @@ input, select, textarea {
   color: var(--color-charcoal);
   outline: none;
   cursor: pointer;
-}
-
-.sort-select-wrapper select:focus {
-  border-color: var(--color-gold);
 }
 
 /* Category Filter Pills */
@@ -652,7 +781,7 @@ input, select, textarea {
   gap: 28px;
 }
 
-/* Product Card (High contrast on light ivory) */
+/* Product Card */
 .product-card {
   background-color: var(--color-white);
   border: 1px solid var(--color-border-light);
@@ -704,6 +833,11 @@ input, select, textarea {
   z-index: 2;
 }
 
+[dir="rtl"] .card-badges {
+  left: auto;
+  right: 12px;
+}
+
 .badge {
   padding: 4px 10px;
   border-radius: var(--radius-sm);
@@ -740,6 +874,11 @@ input, select, textarea {
   justify-content: center;
   z-index: 2;
   box-shadow: var(--shadow-sm);
+}
+
+[dir="rtl"] .card-wishlist-btn {
+  right: auto;
+  left: 12px;
 }
 
 .card-wishlist-btn:hover {
@@ -825,7 +964,6 @@ input, select, textarea {
   font-size: 0.75rem;
 }
 
-/* Swatches */
 .card-swatches {
   display: flex;
   align-items: center;
@@ -840,7 +978,6 @@ input, select, textarea {
   border: 1px solid rgba(0,0,0,0.15);
 }
 
-/* Price & Cart CTA */
 .card-bottom {
   margin-top: auto;
   display: flex;
@@ -865,11 +1002,6 @@ input, select, textarea {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-charcoal);
-}
-
-.card-price span {
-  font-size: 0.85rem;
-  font-weight: 600;
 }
 
 .btn-add-cart {
@@ -986,6 +1118,8 @@ input, select, textarea {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   width: 100%;
+  max-height: 520px;
+  object-fit: cover;
 }
 
 .about-floating-badge {
@@ -999,6 +1133,11 @@ input, select, textarea {
   padding: 16px 24px;
   box-shadow: var(--shadow-lg);
   text-align: center;
+}
+
+[dir="rtl"] .about-floating-badge {
+  right: auto;
+  left: -20px;
 }
 
 .about-floating-badge strong {
@@ -1071,6 +1210,7 @@ input, select, textarea {
   padding-top: 100%;
   box-shadow: var(--shadow-sm);
   cursor: pointer;
+  background-color: #222;
 }
 
 .insta-card img {
@@ -1090,7 +1230,7 @@ input, select, textarea {
 .insta-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(23, 23, 23, 0.7);
+  background: rgba(23, 23, 23, 0.75);
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -1170,7 +1310,7 @@ input, select, textarea {
   left: 0;
   right: 0;
   padding: 16px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, transparent 100%);
   font-size: 0.85rem;
   line-height: 1.4;
 }
@@ -1261,6 +1401,11 @@ input, select, textarea {
   background-color: var(--color-gold);
 }
 
+[dir="rtl"] .footer-col h4::after {
+  left: auto;
+  right: 0;
+}
+
 .footer-col p {
   font-size: 0.9rem;
   line-height: 1.7;
@@ -1286,6 +1431,11 @@ input, select, textarea {
   padding-left: 4px;
 }
 
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
 .footer-social-icons {
   display: flex;
   gap: 12px;
@@ -1302,6 +1452,7 @@ input, select, textarea {
   align-items: center;
   justify-content: center;
   transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
 .social-btn:hover {
@@ -1385,6 +1536,11 @@ input, select, textarea {
   cursor: pointer;
 }
 
+[dir="rtl"] .floating-whatsapp {
+  right: auto;
+  left: 28px;
+}
+
 .floating-whatsapp:hover {
   background-color: #1EBE5D;
   transform: scale(1.05);
@@ -1402,8 +1558,13 @@ input, select, textarea {
   animation: pulse 2s infinite;
 }
 
+[dir="rtl"] .whatsapp-ping {
+  right: auto;
+  left: 0;
+}
+
 /* ===================================================================
-   MODALS & DRAWERS (Cart, Quick View, Policies)
+   MODALS & DRAWERS
    =================================================================== */
 .modal-backdrop {
   position: fixed;
@@ -1460,6 +1621,11 @@ input, select, textarea {
   justify-content: center;
   cursor: pointer;
   z-index: 10;
+}
+
+[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 16px;
 }
 
 .modal-close-btn:hover {
@@ -1676,7 +1842,7 @@ input, select, textarea {
 }
 
 /* ===================================================================
-   CART DRAWER (Slide in from Right)
+   CART DRAWER (Slide in from Right, or from Left in RTL)
    =================================================================== */
 .cart-drawer {
   position: fixed;
@@ -1690,11 +1856,22 @@ input, select, textarea {
   box-shadow: -8px 0 30px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  transition: right var(--transition-normal);
+  transition: right var(--transition-normal), left var(--transition-normal);
+}
+
+[dir="rtl"] .cart-drawer {
+  right: auto;
+  left: -460px;
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.25);
 }
 
 .cart-drawer.active {
   right: 0;
+}
+
+[dir="rtl"] .cart-drawer.active {
+  right: auto;
+  left: 0;
 }
 
 .cart-header {
@@ -1714,6 +1891,10 @@ input, select, textarea {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+[dir="rtl"] .cart-header h3 {
+  font-family: var(--font-arabic-heading);
 }
 
 .cart-header h3 span {
@@ -1902,6 +2083,11 @@ input, select, textarea {
   gap: 10px;
 }
 
+[dir="rtl"] .toast-container {
+  left: auto;
+  right: 24px;
+}
+
 .toast {
   background-color: var(--color-charcoal);
   color: var(--color-white);
@@ -1914,6 +2100,11 @@ input, select, textarea {
   gap: 12px;
   font-size: 0.88rem;
   animation: slideInLeft 0.3s ease-out;
+}
+
+[dir="rtl"] .toast {
+  border-left: none;
+  border-right: 4px solid var(--color-gold);
 }
 
 /* Animations */
@@ -1969,56 +2160,71 @@ input, select, textarea {
 }
 
 @media (max-width: 768px) {
+  .utility-container {
+    justify-content: center;
+  }
+
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: 120px;
     left: -100%;
     width: 80%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 120px);
     background-color: var(--color-charcoal);
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 24px;
     gap: 20px;
-    transition: left var(--transition-normal);
+    transition: left var(--transition-normal), right var(--transition-normal);
     box-shadow: 6px 0 20px rgba(0,0,0,0.4);
   }
-  
+
+  [dir="rtl"] .nav-menu {
+    left: auto;
+    right: -100%;
+    align-items: flex-start;
+  }
+
   .nav-menu.active {
     left: 0;
   }
-  
+
+  [dir="rtl"] .nav-menu.active {
+    right: 0;
+    left: auto;
+  }
+
   .btn-mobile-toggle {
     display: flex;
     color: var(--color-white);
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .trust-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .modal-content-grid {
     grid-template-columns: 1fr;
     padding: 24px;
   }
-  
+
   .modal-gallery-main img {
     height: 300px;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-bottom-container {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .cart-drawer {
     width: 100%;
   }

@@ -1,0 +1,462 @@
+/**
+ * HIJAB STORE ISLAMIC - MULTILINGUAL ENGINE (i18n)
+ * Supported languages:
+ * - 'pt': Português do Brasil (Padrão) [LTR]
+ * - 'ar': العربية (Arabic) [RTL]
+ * - 'fr': Français (French) [LTR]
+ */
+
+const translations = {
+  pt: {
+    dir: 'ltr',
+    langName: 'Português',
+    announcement: '✨ <strong>Frete Grátis</strong> para todo o Brasil em compras acima de R$ 199,00 • Parcele em até 6x • Qualidade Premium',
+    nav: {
+      home: 'Início',
+      catalog: 'Catálogo',
+      niqabs: 'Niqabs',
+      hijabs: 'Hijabs',
+      abayas: 'Abayas',
+      khimars: 'Khimars',
+      prayer: 'Oração',
+      about: 'Sobre Nós',
+      contact: 'Contato'
+    },
+    socialNotice: 'Este canal oficial estará disponível em breve!',
+    hero: {
+      tag: 'Nova Coleção 2026',
+      title: 'Elegância Islâmica & <span>Modéstia Contemporânea</span>',
+      description: 'A mais refinada seleção de Hijabs em Chiffon de Seda, Abayas exclusivas no estilo Dubai, Niqabs e Roupas de Oração, criadas para a mulher muçulmana no Brasil com tecidos nobres e acabamento impecável.',
+      btnShop: 'Comprar Agora',
+      btnWhatsApp: 'Fale pelo WhatsApp'
+    },
+    trust: {
+      shippingTitle: 'Envio para todo o Brasil',
+      shippingDesc: 'Rastreamento rápido e seguro',
+      fabricsTitle: 'Tecidos Nobres Selecionados',
+      fabricsDesc: 'Chiffon de seda, modal & crepe opaco',
+      supportTitle: 'Suporte via WhatsApp',
+      supportDesc: 'Atendimento atencioso e humanizado',
+      securityTitle: 'Pagamento Seguro',
+      securityDesc: 'Pix imediato ou até 6x no cartão'
+    },
+    departments: {
+      subtitle: 'Departamentos',
+      title: 'Nossas Categorias',
+      desc: 'Navegue pelas principais coleções de moda modesta islâmica de alto padrão.',
+      catNiqabs: 'Niqabs',
+      catNiqabsDesc: 'Clássicos e Anatômicos',
+      catHijabs: 'Hijabs',
+      catHijabsDesc: 'Seda, Chiffon, Modal',
+      catKhimars: 'Khimars',
+      catKhimarsDesc: 'Longos e Dupla Camada',
+      catAbayas: 'Abayas',
+      catAbayasDesc: 'Estilo Dubai & Clássicas',
+      catDresses: 'Vestidos Modestos',
+      catDressesDesc: 'Longos e Fluidos',
+      catPrayer: 'Roupas de Oração',
+      catPrayerDesc: 'Conjuntos com Bolsa',
+      catAccessories: 'Acessórios',
+      catAccessoriesDesc: 'Pins Magnéticos & Toucas'
+    },
+    catalog: {
+      subtitle: 'Catálogo Completo',
+      title: 'Coleção Hijab Store',
+      loading: 'Carregando produtos...',
+      countSingle: 'produto encontrado',
+      countPlural: 'produtos encontrados',
+      searchPlaceholder: 'Buscar por hijab, abaya, cor ou tecido...',
+      sortLabel: 'Ordenar por:',
+      sortFeatured: 'Relevância / Destaques',
+      sortPriceAsc: 'Menor Preço',
+      sortPriceDesc: 'Maior Preço',
+      sortRating: 'Mais Bem Avaliados',
+      sortNew: 'Novidades Primeiro',
+      allProducts: 'Todos os Produtos',
+      badgeNew: 'Novidade',
+      badgeBestSeller: 'Mais Vendido',
+      quickView: 'Visualização Rápida',
+      addToBag: 'Adicionar à Sacola',
+      emptyTitle: 'Nenhum produto encontrado',
+      emptyDesc: 'Tente ajustar sua busca ou selecionar outra categoria.',
+      btnClear: 'Limpar Filtros'
+    },
+    promo: {
+      badge: 'Atendimento Consultivo',
+      title: 'Dúvidas sobre o tecido ideal ou como combinar suas peças?',
+      desc: 'Nossa equipe de consultoria de moda modesta está disponível no WhatsApp para te ajudar a escolher o tom perfeito, explicar o caimento de cada tecido e orientar você com máxima atenção.',
+      btnChat: 'Falar com uma Especialista',
+      couponTitle: 'Cupom de Boas-Vindas',
+      couponDesc: 'Use o cupom na sua primeira compra e ganhe 10% de desconto:',
+      couponNotice: 'Válido para todo o site em compras acima de R$ 99'
+    },
+    about: {
+      badgeStrong: '100%',
+      badgeSpan: 'Modéstia & Luxo',
+      subtitle: 'Sobre a Hijab Store',
+      title: 'Moda Modesta com Propósito, Respeito e Sofisticação',
+      p1: 'A <strong>Hijab Store Islamic</strong> nasceu da paixão por proporcionar às mulheres muçulmanas e adeptas da moda modesta no Brasil o acesso a peças que unem a dignidade e modéstia islâmica aos mais altos padrões de elegância contemporânea.',
+      p2: 'Selecionamos minuciosamente tecidos leves, respiráveis e confortáveis para o clima brasileiro — como chiffon de seda georgette, crepe medina, jersey modal e nida original — garantindo caimento impecável, opacidade e durabilidade em cada criação.',
+      feat1: 'Tecidos respiráveis e nobres',
+      feat2: 'Modelagens sem transparência',
+      feat3: 'Envio com embalagem especial',
+      feat4: 'Garantia de troca facilitada'
+    },
+    social: {
+      instaSubtitle: 'Siga nosso Instagram',
+      instaDesc: 'Inspirações diárias de estilo modesto, lançamentos e bastidores da nossa marca.',
+      instaOverlay: 'Ver no Instagram',
+      tiktokSubtitle: 'TikTok Vídeos',
+      tiktokTitle: 'Tutoriais & Estilo Rápido',
+      tiktokBtn: 'Ver no TikTok',
+      tiktok1: '<strong>Tutorial:</strong> 3 formas elegantes de usar seu hijab chiffon sem furar com alfinetes ✨',
+      tiktok2: '<strong>Inspiração:</strong> Como combinar nossa Abaya Dubai aberta para festas e recepções 💎',
+      tiktok3: '<strong>Dica de Ouro:</strong> Testamos o poder dos pins magnéticos no vento forte do dia a dia 🧲'
+    },
+    newsletter: {
+      title: 'Receba Lançamentos & Benefícios VIP',
+      desc: 'Cadastre seu e-mail para receber cupons exclusivos, avisos de reposição de hijabs e novidades em primeira mão.',
+      placeholder: 'Digite seu melhor e-mail...',
+      btn: 'Inscrever-se',
+      success: 'Obrigada por se inscrever! Você receberá ofertas exclusivas no e-mail.'
+    },
+    footer: {
+      brandDesc: 'Moda modesta islâmica de alto luxo no Brasil. Hijabs, Khimars, Abayas e Roupas de Oração selecionadas com excelência e sofisticação.',
+      collectionsTitle: 'Coleções',
+      serviceTitle: 'Atendimento',
+      contactTitle: 'Fale Conosco',
+      supportHuman: 'WhatsApp: Atendimento Humanizado',
+      hours: 'Segunda a Sábado: 09h às 19h',
+      rights: '© 2026 <strong>Hijab Store Islamic</strong>. Todos os direitos reservados. Moda Modesta com Elegância e Respeito.',
+      pixBadge: 'PIX Imediato'
+    },
+    modal: {
+      fabricLabel: 'Tecido:',
+      dimensionsLabel: 'Dimensões / Tamanhos:',
+      availabilityLabel: 'Disponibilidade:',
+      inStock: 'Em Estoque no Brasil',
+      selectColor: 'Selecione a Cor:',
+      addToBag: 'Adicionar à Sacola',
+      buyWhatsApp: 'Comprar Direto pelo WhatsApp'
+    },
+    cart: {
+      title: 'Sua Sacola <span>de Compras</span>',
+      emptyTitle: 'Seu carrinho está vazio',
+      emptyDesc: 'Que tal explorar nossa coleção de hijabs e abayas?',
+      btnExplore: 'Ver Coleção',
+      subtotal: 'Subtotal:',
+      discount: 'Desconto do Cupom:',
+      shipping: 'Frete:',
+      freeShipping: 'Grátis ✨',
+      total: 'Total:',
+      applyCoupon: 'Aplicar',
+      couponPlaceholder: 'Cupom (ex: BEMVINDA10)',
+      btnCheckout: 'Finalizar Pedido pelo WhatsApp',
+      checkoutNotice: 'Ao clicar, seu pedido será enviado pronto e formatado para o nosso WhatsApp.',
+      couponSuccess: 'Cupom aplicado com sucesso!',
+      couponInvalid: 'Cupom inválido ou expirado.'
+    }
+  },
+
+  ar: {
+    dir: 'rtl',
+    langName: 'العربية',
+    announcement: '✨ <strong>شحن مجاني</strong> لكافة الطلبات فوق R$ 199,00 • تقسيط حتى 6 دفعات • جودة شرعية فاخرة',
+    nav: {
+      home: 'الرئيسية',
+      catalog: 'الكتالوج',
+      niqabs: 'النقاب',
+      hijabs: 'الحجابات',
+      abayas: 'العبايات',
+      khimars: 'الخمار',
+      prayer: 'الصلاة',
+      about: 'عن المتجر',
+      contact: 'اتصل بنا'
+    },
+    socialNotice: 'هذا الحساب الرسمي سيكون متاحاً قريباً جداً!',
+    hero: {
+      tag: 'المجموعة الشرعية الجديدة 2026',
+      title: 'أناقة إسلامية و <span>حشمة شرعية راقية</span>',
+      description: 'أرقى تشكيلة من الحجابات الحريرية، العبايات الخليجية الفضفاضة، النقابات الشرعية، وملابس الصلاة المصنوعة خصيصاً للمرأة المسلمة بأجود الخامات الساترة غير الشفافة.',
+      btnShop: 'تسوقي الآن',
+      btnWhatsApp: 'تواصل عبر واتساب'
+    },
+    trust: {
+      shippingTitle: 'شحن موثوق وسريع',
+      shippingDesc: 'تتبع مباشر لكل طلب حتى الباب',
+      fabricsTitle: 'أقمشة شرعية فاخرة',
+      fabricsDesc: 'حرير، شيفون، كريب معتم وساتر',
+      supportTitle: 'دعم مباشر عبر واتساب',
+      supportDesc: 'استشارات مقاسات وأقمشة بكل اهتمام',
+      securityTitle: 'دفع آمن ومعتمد',
+      securityDesc: 'دفع فوري عبر Pix أو بطاقات الائتمان'
+    },
+    departments: {
+      subtitle: 'الأقسام',
+      title: 'أقسام المتجر',
+      desc: 'استكشفي تشكيلات الأزياء الإسلامية الشرعية المحتشمة ذات المعايير العالية.',
+      catNiqabs: 'النقاب',
+      catNiqabsDesc: 'شرعي كلاسيكي ومريح',
+      catHijabs: 'الحجابات',
+      catHijabsDesc: 'شيفون، حرير، جيرسيه',
+      catKhimars: 'الخمار',
+      catKhimarsDesc: 'خمار طويل وطبقتين',
+      catAbayas: 'العبايات',
+      catAbayasDesc: 'عبايات دبي وكلاسيكية',
+      catDresses: 'الفساتين المحتشمة',
+      catDressesDesc: 'أثواب طويلة وفضفاضة',
+      catPrayer: 'ملابس الصلاة',
+      catPrayerDesc: 'أطقم صلاة مع حقيبة',
+      catAccessories: 'الإكسسوارات',
+      catAccessoriesDesc: 'دبابيس مغناطيسية وبندانات'
+    },
+    catalog: {
+      subtitle: 'الكتالوج الكامل',
+      title: 'مجموعة Hijab Store',
+      loading: 'جاري تحميل المنتجات...',
+      countSingle: 'منتج متاح',
+      countPlural: 'منتجات متاحة',
+      searchPlaceholder: 'ابحثي عن حجاب، عباية، لون أو خامة...',
+      sortLabel: 'ترتيب حسب:',
+      sortFeatured: 'المقترحة / الأكثر تميزاً',
+      sortPriceAsc: 'السعر: من الأقل للأعلى',
+      sortPriceDesc: 'السعر: من الأعلى للأقل',
+      sortRating: 'الأعلى تقييماً',
+      sortNew: 'الأحدث أولاً',
+      allProducts: 'جميع المنتجات',
+      badgeNew: 'جديد',
+      badgeBestSeller: 'الأكثر مبيعاً',
+      quickView: 'معاينة سريعة',
+      addToBag: 'أضف إلى السلة',
+      emptyTitle: 'لم يتم العثور على منتجات',
+      emptyDesc: 'يرجى تجربة كلمة بحث أخرى أو اختيار قسم آخر.',
+      btnClear: 'إعادة ضبط الفلاتر'
+    },
+    promo: {
+      badge: 'استشارات أزياء مجانية',
+      title: 'هل لديك استفسار عن نوع القماش أو المقاس المناسب؟',
+      desc: 'فريقنا المتخصص في الأزياء الإسلامية جاهز للرد على استفساراتك ومساعدتك في اختيار أنسب الألوان والخامات التي تلائمك باحترافية تامة.',
+      btnChat: 'تحدثي مع مستشارة المتجر',
+      couponTitle: 'كوبون الترحيب الخاص',
+      couponDesc: 'استخدمي الكود عند طلبك الأول للحصول على خصم 10% فوري:',
+      couponNotice: 'صالح لجميع المنتجات للمشتريات فوق R$ 99'
+    },
+    about: {
+      badgeStrong: '100%',
+      badgeSpan: 'حشمة وأصالة',
+      subtitle: 'عن المتجر',
+      title: 'أزياء شرعية تجمع بين الوقار والأناقة الرفيعة',
+      p1: 'تأسس <strong>Hijab Store Islamic</strong> ليلبي تطلعات المرأة المسلمة في اقتناء ملابس شرعية محتشمة تماماً وغير شفافة، بأعلى معايير الجودة والحرفية.',
+      p2: 'نختار بدقة الأقمشة الخفيفة والساترة التي تناسب مختلف الأجواء — مثل الشيفون الحريري الفاخر، كريب المدينة، والجيرسيه الطبيعي — لنضمن لكِ راحة تامة وسواداً فاحماً ووقاراً لا مثيل له.',
+      feat1: 'أقمشة فاخرة وساترة تماماً',
+      feat2: 'قصات فضفاضة لا تصف ولا تشف',
+      feat3: 'تغليف راقٍ ومميز لكل طلب',
+      feat4: 'ضمان الاستبدال بكل سهولة'
+    },
+    social: {
+      instaSubtitle: 'تابعونا على Instagram',
+      instaDesc: 'إلهام يومي لتنسيق الملابس الشرعية، أحدث الإصدارات وكواليس عملنا.',
+      instaOverlay: 'مشاهدة على Instagram',
+      tiktokSubtitle: 'فيديوهات TikTok',
+      tiktokTitle: 'طرق لف الحجاب وتنسيق العبايات',
+      tiktokBtn: 'مشاهدة على TikTok',
+      tiktok1: '<strong>طريقة سريعة:</strong> 3 طرق لتثبيت الشيفون بأناقة دون إتلاف القماش ✨',
+      tiktok2: '<strong>تنسيق محتشم:</strong> كيفية تنسيق العباءة السوداء مع النقاب للمناسبات 💎',
+      tiktok3: '<strong>نصيحة ذهبية:</strong> تجربة قوة الدبابيس المغناطيسية الأصلية 🧲'
+    },
+    newsletter: {
+      title: 'اشتركي ليصلك جديد التشكيلات والخصومات',
+      desc: 'سجلي بريدك الإلكتروني للحصول على عروض حصرية وإشعارات توفر الحجابات والعبايات الجديدة.',
+      placeholder: 'أدخلي بريدك الإلكتروني...',
+      btn: 'اشتراك',
+      success: 'شكراً لاشتراكك! ستصلك أحدث العروض على بريدك الإلكتروني.'
+    },
+    footer: {
+      brandDesc: 'متجركم الموثوق للملابس الإسلامية والحجابات والعبايات الشرعية الفاخرة بأعلى معايير الحشمة والأناقة.',
+      collectionsTitle: 'التشكيلات',
+      serviceTitle: 'خدمة العملاء',
+      contactTitle: 'تواصل معنا',
+      supportHuman: 'واتساب: خدمة عملاء فورية',
+      hours: 'من الإثنين إلى السبت: 9 صباحاً إلى 7 مساءً',
+      rights: '© 2026 <strong>Hijab Store Islamic</strong>. جميع الحقوق محفوظة. أزياء إسلامية بأصالة ووقار.',
+      pixBadge: 'دفع فوري بالـ PIX'
+    },
+    modal: {
+      fabricLabel: 'نوع القماش:',
+      dimensionsLabel: 'المقاسات / الأبعاد:',
+      availabilityLabel: 'حالة التوفر:',
+      inStock: 'متوفر وجاهز للشحن الفوري',
+      selectColor: 'اختاري اللون:',
+      addToBag: 'إضافة إلى السلة',
+      buyWhatsApp: 'طلب فوري ومباشر عبر واتساب'
+    },
+    cart: {
+      title: 'سلة <span>المشتريات</span>',
+      emptyTitle: 'سلتك فارغة حالياً',
+      emptyDesc: 'تفضلي بتصفح تشكيلتنا من الحجابات والعبايات والنقابات.',
+      btnExplore: 'تصفح الكتالوج',
+      subtotal: 'المجموع الفرعي:',
+      discount: 'خصم الكوبون:',
+      shipping: 'الشحن:',
+      freeShipping: 'مجاني ✨',
+      total: 'الإجمالي:',
+      applyCoupon: 'تطبيق',
+      couponPlaceholder: 'كوبون الخصم (مثل BEMVINDA10)',
+      btnCheckout: 'إتمام الطلب عبر واتساب',
+      checkoutNotice: 'عند الضغط، سيتم إنشاء رسالة طلب كاملة ومفصلة وإرسالها إلى الواتساب مباشرة.',
+      couponSuccess: 'تم تفعيل الكوبون بنجاح!',
+      couponInvalid: 'كوبون غير صالح أو منتهي الصلاحية.'
+    }
+  },
+
+  fr: {
+    dir: 'ltr',
+    langName: 'Français',
+    announcement: '✨ <strong>Livraison Gratuite</strong> pour toutes les commandes supérieures à R$ 199,00 • Paiement jusqu\'à 6x • Qualité Premium',
+    nav: {
+      home: 'Accueil',
+      catalog: 'Catalogue',
+      niqabs: 'Niqabs',
+      hijabs: 'Hijabs',
+      abayas: 'Abayas',
+      khimars: 'Khimars',
+      prayer: 'Prière',
+      about: 'À Propos',
+      contact: 'Contact'
+    },
+    socialNotice: 'Ce compte officiel sera bientôt disponible !',
+    hero: {
+      tag: 'Nouvelle Collection 2026',
+      title: 'Élégance Islamique & <span>Modestie Contemporaine</span>',
+      description: 'La plus raffinée sélection de Hijabs en Mousseline de Soie, Abayas exclusives façon Dubaï, Niqabs et Tenues de Prière, confectionnées pour la femme musulmane avec des tissus nobles et une finition impeccable.',
+      btnShop: 'Acheter Maintenant',
+      btnWhatsApp: 'Écrire sur WhatsApp'
+    },
+    trust: {
+      shippingTitle: 'Livraison Rapide et Sécurisée',
+      shippingDesc: 'Suivi de commande direct jusqu\'à votre porte',
+      fabricsTitle: 'Tissus Nobles Sélectionnés',
+      fabricsDesc: 'Mousseline de soie, modal et crêpe opaque',
+      supportTitle: 'Assistance via WhatsApp',
+      supportDesc: 'Service client personnalisé et attentif',
+      securityTitle: 'Paiement Sécurisé',
+      securityDesc: 'Paiement instantané Pix ou Carte Bancaire'
+    },
+    departments: {
+      subtitle: 'Rayons',
+      title: 'Nos Catégories',
+      desc: 'Découvrez nos collections prestigieuses de mode modeste islamique de haute qualité.',
+      catNiqabs: 'Niqabs',
+      catNiqabsDesc: 'Classiques et Anatomiques',
+      catHijabs: 'Hijabs',
+      catHijabsDesc: 'Soie, Mousseline, Modal',
+      catKhimars: 'Khimars',
+      catKhimarsDesc: 'Longs et Double Couche',
+      catAbayas: 'Abayas',
+      catAbayasDesc: 'Style Dubaï & Classiques',
+      catDresses: 'Robes Modestes',
+      catDressesDesc: 'Longues et Fluides',
+      catPrayer: 'Tenues de Prière',
+      catPrayerDesc: 'Ensembles avec Pochette',
+      catAccessories: 'Accessoires',
+      catAccessoriesDesc: 'Épingles Magnétiques & Bonnets'
+    },
+    catalog: {
+      subtitle: 'Catalogue Complet',
+      title: 'Collection Hijab Store',
+      loading: 'Chargement des produits...',
+      countSingle: 'produit trouvé',
+      countPlural: 'produits trouvés',
+      searchPlaceholder: 'Rechercher un hijab, abaya, couleur ou tissu...',
+      sortLabel: 'Trier par :',
+      sortFeatured: 'Pertinence / En Vedette',
+      sortPriceAsc: 'Prix : Croissant',
+      sortPriceDesc: 'Prix : Décroissant',
+      sortRating: 'Mieux Notés',
+      sortNew: 'Nouveautés d\'Abord',
+      allProducts: 'Tous les Produits',
+      badgeNew: 'Nouveau',
+      badgeBestSeller: 'Meilleure Vente',
+      quickView: 'Aperçu Rapide',
+      addToBag: 'Ajouter au Panier',
+      emptyTitle: 'Aucun produit trouvé',
+      emptyDesc: 'Essayez une autre recherche ou sélectionnez une autre catégorie.',
+      btnClear: 'Réinitialiser les Filtres'
+    },
+    promo: {
+      badge: 'Conseil Personnalisé',
+      title: 'Des doutes sur le tissu idéal ou la coupe parfaite ?',
+      desc: 'Notre équipe spécialisée en mode modeste est disponible sur WhatsApp pour vous conseiller sur les meilleures associations de tissus et de couleurs.',
+      btnChat: 'Parler à une Conseillère',
+      couponTitle: 'Code Promo de Bienvenue',
+      couponDesc: 'Utilisez ce code lors de votre première commande pour 10% de réduction immédiate :',
+      couponNotice: 'Valable sur tout le site dès R$ 99 d\'achats'
+    },
+    about: {
+      badgeStrong: '100%',
+      badgeSpan: 'Pudeur & Élégance',
+      subtitle: 'À Propos',
+      title: 'Une Mode Modeste avec Valeurs, Respect et Raffinement',
+      p1: '<strong>Hijab Store Islamic</strong> est né de la passion d\'offrir aux femmes musulmanes des vêtements alliant dignité et pudeur islamique aux plus hauts standards d\'élégance.',
+      p2: 'Nous sélectionnons rigoureusement des tissus respirants, légers et opaques adaptés à tous les climats — crêpe de Médine, mousseline de soie, jersey de modal — pour une tenue parfaite sans aucune transparence.',
+      feat1: 'Tissus nobles et totalement opaques',
+      feat2: 'Coupes amples préservant la pudeur',
+      feat3: 'Expédition soignée avec emballage délicat',
+      feat4: 'Garantie d\'échange simplifiée'
+    },
+    social: {
+      instaSubtitle: 'Suivez-nous sur Instagram',
+      instaDesc: 'Inspirations quotidiennes de tenues modestes, nouvelles sorties et coulisses de notre marque.',
+      instaOverlay: 'Voir sur Instagram',
+      tiktokSubtitle: 'Vidéos TikTok',
+      tiktokTitle: 'Tutoriels & Astuces Hijab',
+      tiktokBtn: 'Voir sur TikTok',
+      tiktok1: '<strong>Tutoriel :</strong> 3 façons de draper votre hijab mousseline sans l\'abîmer ✨',
+      tiktok2: '<strong>Inspiration :</strong> Comment assortir une Abaya Dubaï avec grâce 💎',
+      tiktok3: '<strong>Astuce :</strong> Test de force de nos épingles magnétiques en néodyme 🧲'
+    },
+    newsletter: {
+      title: 'Recevez nos Nouveautés & Privilèges VIP',
+      desc: 'Inscrivez-vous pour recevoir des remises exclusives et des alertes de réassort de nos hijabs.',
+      placeholder: 'Entrez votre adresse e-mail...',
+      btn: 'S\'inscrire',
+      success: 'Merci de votre inscription ! Vous recevrez nos offres exclusives par e-mail.'
+    },
+    footer: {
+      brandDesc: 'Votre référence en mode modeste islamique haut de gamme. Hijabs, Abayas, Khimars et Tenues de Prière sélectionnés avec excellence.',
+      collectionsTitle: 'Collections',
+      serviceTitle: 'Service Client',
+      contactTitle: 'Contactez-Nous',
+      supportHuman: 'WhatsApp : Service Clientèle Direct',
+      hours: 'Du Lundi au Samedi : 09h à 19h',
+      rights: '© 2026 <strong>Hijab Store Islamic</strong>. Tous droits réservés. Mode Modeste avec Élégance et Respect.',
+      pixBadge: 'Paiement Instantané PIX'
+    },
+    modal: {
+      fabricLabel: 'Matière / Tissu :',
+      dimensionsLabel: 'Dimensions / Tailles :',
+      availabilityLabel: 'Disponibilité :',
+      inStock: 'En Stock Prêt à Expédier',
+      selectColor: 'Sélectionnez la Couleur :',
+      addToBag: 'Ajouter au Panier',
+      buyWhatsApp: 'Commander Directement sur WhatsApp'
+    },
+    cart: {
+      title: 'Votre <span>Panier</span>',
+      emptyTitle: 'Votre panier est vide',
+      emptyDesc: 'Découvrez notre collection de hijabs, abayas et niqabs.',
+      btnExplore: 'Voir la Collection',
+      subtotal: 'Sous-total :',
+      discount: 'Remise du Code :',
+      shipping: 'Livraison :',
+      freeShipping: 'Gratuite ✨',
+      total: 'Total :',
+      applyCoupon: 'Appliquer',
+      couponPlaceholder: 'Code promo (ex: BEMVINDA10)',
+      btnCheckout: 'Finaliser la Commande sur WhatsApp',
+      checkoutNotice: 'En cliquant, votre panier sera formaté et envoyé automatiquement sur notre WhatsApp.',
+      couponSuccess: 'Code promo appliqué avec succès !',
+      couponInvalid: 'Code promo invalide ou expiré.'
+    }
+  }
+};

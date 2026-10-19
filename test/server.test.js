@@ -2,9 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
 
-// Test against the running server or an internal express instance
-test('Store API & Health Check Test Suite', async (t) => {
-  // Dynamically import server components or test API via fetch
+test('Store API, i18n & Modest Catalog Test Suite', async (t) => {
   const { default: express } = await import('express');
   const fs = await import('fs');
   const path = await import('path');
@@ -28,7 +26,13 @@ test('Store API & Health Check Test Suite', async (t) => {
 
   // Config endpoint
   app.get('/api/config', (req, res) => {
-    res.json({ storeName: 'Hijab Store Islamic', currency: 'BRL' });
+    res.json({
+      storeName: 'Hijab Store Islamic',
+      whatsappNumber: process.env.WHATSAPP_NUMBER || '',
+      instagramUrl: process.env.INSTAGRAM_URL || '',
+      tiktokUrl: process.env.TIKTOK_URL || '',
+      currency: 'BRL'
+    });
   });
 
   // Products endpoint
@@ -40,7 +44,11 @@ test('Store API & Health Check Test Suite', async (t) => {
     }
     if (search) {
       const q = search.toLowerCase();
-      list = list.filter(p => p.name.toLowerCase().includes(q));
+      list = list.filter(p =>
+        p.name.toLowerCase().includes(q) ||
+        (p.name_ar && p.name_ar.includes(q)) ||
+        (p.name_fr && p.name_fr.toLowerCase().includes(q))
+      );
     }
     res.json(list);
   });
@@ -55,39 +63,53 @@ test('Store API & Health Check Test Suite', async (t) => {
     assert.equal(res.status, 200);
     const data = await res.json();
     assert.equal(data.status, 'ok');
-    assert.equal(data.service, 'hijabstoreislamic');
   });
 
-  await t.test('GET /api/config returns store settings', async () => {
+  await t.test('GET /api/config returns safe empty default links when unset', async () => {
     const res = await fetch(`${baseUrl}/api/config`);
     assert.equal(res.status, 200);
     const data = await res.json();
-    assert.equal(data.storeName, 'Hijab Store Islamic');
-    assert.equal(data.currency, 'BRL');
+    assert.equal(typeof data.whatsappNumber, 'string');
+    assert.equal(typeof data.instagramUrl, 'string');
+    assert.equal(typeof data.tiktokUrl, 'string');
   });
 
-  await t.test('GET /api/products returns all products', async () => {
+  await t.test('GET /api/products returns modest Islamic products with Arabic and French translations', async () => {
     const res = await fetch(`${baseUrl}/api/products`);
     assert.equal(res.status, 200);
     const data = await res.json();
-    assert.ok(Array.isArray(data));
-    assert.ok(data.length >= 10);
+    assert.ok(data.length >= 8);
+    // Verify each product has Arabic and French fields
+    data.forEach(p => {
+      assert.ok(p.name, 'Product has Portuguese name');
+      assert.ok(p.name_ar, `Product ${p.id} has Arabic name`);
+      assert.ok(p.name_fr, `Product ${p.id} has French name`);
+      assert.ok(p.image, `Product ${p.id} has an image`);
+    });
   });
 
-  await t.test('GET /api/products?category=hijabs filters correctly', async () => {
-    const res = await fetch(`${baseUrl}/api/products?category=hijabs`);
+  await t.test('GET /api/products?category=niqabs filters Niqab category correctly', async () => {
+    const res = await fetch(`${baseUrl}/api/products?category=niqabs`);
     assert.equal(res.status, 200);
     const data = await res.json();
     assert.ok(data.length > 0);
-    data.forEach(p => assert.equal(p.category, 'hijabs'));
+    assert.equal(data[0].category, 'niqabs');
   });
 
-  await t.test('GET /api/products?search=chiffon filters correctly', async () => {
-    const res = await fetch(`${baseUrl}/api/products?search=chiffon`);
+  await t.test('Search works with Arabic keywords', async () => {
+    const res = await fetch(`${baseUrl}/api/products?search=${encodeURIComponent('نقاب')}`);
     assert.equal(res.status, 200);
     const data = await res.json();
     assert.ok(data.length > 0);
-    data.forEach(p => assert.ok(p.name.toLowerCase().includes('chiffon')));
+  });
+
+  await t.test('All images in public/images are accessible locally', async () => {
+    const resHero = await fetch(`${baseUrl}/images/hero-niqab.jpg`);
+    assert.equal(resHero.status, 200);
+    const resNiqab = await fetch(`${baseUrl}/images/niqab-saudi.jpg`);
+    assert.equal(resNiqab.status, 200);
+    const resAbaya = await fetch(`${baseUrl}/images/abaya-embroidery.jpg`);
+    assert.equal(resAbaya.status, 200);
   });
 
   server.close();

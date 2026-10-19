@@ -22,16 +22,31 @@ try {
   console.error('Error loading products.json:', err);
 }
 
-// Categories list with metadata
+// Load store configuration
+let storeConfig = {
+  storeName: 'Hijab Store Islamic',
+  whatsappNumber: '',
+  instagramUrl: '',
+  tiktokUrl: ''
+};
+
+try {
+  const configData = fs.readFileSync(path.join(__dirname, 'data', 'config.json'), 'utf-8');
+  storeConfig = { ...storeConfig, ...JSON.parse(configData) };
+} catch (err) {
+  console.warn('Could not read data/config.json, using defaults.');
+}
+
+// Categories list
 const categories = [
-  { id: 'todos', name: 'Todos os Produtos', slug: 'todos' },
-  { id: 'hijabs', name: 'Hijabs', slug: 'hijabs' },
-  { id: 'khimars', name: 'Khimars', slug: 'khimars' },
-  { id: 'abayas', name: 'Abayas', slug: 'abayas' },
-  { id: 'vestidos', name: 'Vestidos Modestos', slug: 'vestidos' },
-  { id: 'moda-feminina', name: 'Moda Feminina', slug: 'moda-feminina' },
-  { id: 'oracao', name: 'Roupas de Oração', slug: 'oracao' },
-  { id: 'acessorios', name: 'Acessórios', slug: 'acessorios' }
+  { id: 'todos', name: 'Todos os Produtos', name_ar: 'جميع المنتجات', name_fr: 'Tous les Produits', slug: 'todos' },
+  { id: 'niqabs', name: 'Niqabs', name_ar: 'النقاب', name_fr: 'Niqabs', slug: 'niqabs' },
+  { id: 'hijabs', name: 'Hijabs', name_ar: 'الحجابات', name_fr: 'Hijabs', slug: 'hijabs' },
+  { id: 'khimars', name: 'Khimars', name_ar: 'الخمار', name_fr: 'Khimars', slug: 'khimars' },
+  { id: 'abayas', name: 'Abayas', name_ar: 'العبايات', name_fr: 'Abayas', slug: 'abayas' },
+  { id: 'vestidos', name: 'Vestidos Modestos', name_ar: 'الفساتين المحتشمة', name_fr: 'Robes Modestes', slug: 'vestidos' },
+  { id: 'oracao', name: 'Roupas de Oração', name_ar: 'ملابس الصلاة', name_fr: 'Tenues de Prière', slug: 'oracao' },
+  { id: 'acessorios', name: 'Acessórios', name_ar: 'الإكسسوارات', name_fr: 'Accessoires', slug: 'acessorios' }
 ];
 
 // Health check endpoint for Railway
@@ -47,17 +62,13 @@ app.get('/health', (req, res) => {
 // Store configuration endpoint
 app.get('/api/config', (req, res) => {
   res.json({
-    storeName: 'Hijab Store Islamic',
-    whatsappNumber: process.env.WHATSAPP_NUMBER || '5511999999999',
-    instagramUrl: process.env.INSTAGRAM_URL || 'https://instagram.com/hijabstoreislamic',
-    tiktokUrl: process.env.TIKTOK_URL || 'https://tiktok.com/@hijabstoreislamic',
+    storeName: storeConfig.storeName,
+    // Prefer environment variable if set, otherwise config file, otherwise empty string
+    whatsappNumber: process.env.WHATSAPP_NUMBER || storeConfig.whatsappNumber || '',
+    instagramUrl: process.env.INSTAGRAM_URL || storeConfig.instagramUrl || '',
+    tiktokUrl: process.env.TIKTOK_URL || storeConfig.tiktokUrl || '',
     currency: 'BRL',
-    currencySymbol: 'R$',
-    announcements: [
-      '✨ Frete Grátis para todo o Brasil em compras acima de R$ 199,00',
-      '💎 Coleção Luxo Exclusiva: Hijabs & Abayas Selecionadas',
-      '📦 Envio rápido com código de rastreamento e embalagem especial'
-    ]
+    currencySymbol: 'R$'
   });
 });
 
@@ -82,6 +93,8 @@ app.get('/api/products', (req, res) => {
     const q = search.toLowerCase();
     result = result.filter(p =>
       p.name.toLowerCase().includes(q) ||
+      (p.name_ar && p.name_ar.includes(q)) ||
+      (p.name_fr && p.name_fr.toLowerCase().includes(q)) ||
       p.description.toLowerCase().includes(q) ||
       p.fabric.toLowerCase().includes(q) ||
       p.categoryName.toLowerCase().includes(q)
